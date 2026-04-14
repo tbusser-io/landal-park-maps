@@ -70,6 +70,7 @@ const mainContentClass = computed(() => {
 
       <!-- Map View -->
       <MapView
+        :selected-park="selectedPark"
         @marker-click="handleMarkerClick"
         @open-filters="handleOpenFilters"
       />
