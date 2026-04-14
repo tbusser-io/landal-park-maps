@@ -88,9 +88,19 @@ watch(filteredParks, (parks) => {
   fitMapBounds(parks);
 }, { immediate: true });
 
-// Watch for changes in selected park to adjust bounds when side panel opens/closes
-watch(() => props.selectedPark, () => {
-  fitMapBounds(filteredParks.value);
+// Watch for changes in selected park to center map on the marker
+watch(() => props.selectedPark, async (park) => {
+  if (!park || !mapRef.value) return;
+
+  try {
+    const mapInstance = await mapRef.value.map;
+    if (!mapInstance) return;
+
+    // Pan to center the selected marker
+    mapInstance.panTo(park.coordinates);
+  } catch (error) {
+    console.error('Error panning to marker:', error);
+  }
 });
 
 // Apply map options after component mounts
