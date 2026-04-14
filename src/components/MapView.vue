@@ -199,14 +199,18 @@ const handleMarkerClick = (park: Park) => {
   emit('markerClick', park);
 };
 
-// Custom cluster options
+// Custom cluster options - use default renderer with brand colors
 const clusterOptions = {
   renderer: {
     render: ({ count, position }: any) => {
+      // Calculate size based on count (scales with number of markers)
+      const baseSize = 40;
+      const size = Math.min(baseSize + Math.floor(count / 10) * 5, 70); // Max size of 70px
+
       const svg = `
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="52px" viewBox="0 0 52 52" version="1.1">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${size}px" height="${size}px" viewBox="0 0 ${size} ${size}" version="1.1">
           <defs>
-            <circle id="cluster-path" cx="26" cy="24" r="19"/>
+            <circle id="cluster-path" cx="${size/2}" cy="${size/2}" r="${size/2 - 6}"/>
             <filter x="-30.3%" y="-25.0%" width="160.5%" height="160.5%" filterUnits="objectBoundingBox" id="cluster-filter">
               <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
               <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
@@ -218,7 +222,7 @@ const clusterOptions = {
               <use fill="black" fill-opacity="1" filter="url(#cluster-filter)" xlink:href="#cluster-path"/>
               <use fill="#FFFAE9" fill-rule="evenodd" xlink:href="#cluster-path"/>
             </g>
-            <text x="26" y="29" text-anchor="middle" font-size="16" font-weight="700" fill="#0097A2" font-family="Inter, arial, sans-serif">${count}</text>
+            <text x="${size/2}" y="${size/2 + 6}" text-anchor="middle" font-size="${Math.min(16 + Math.floor(count / 50) * 2, 22)}" font-weight="700" fill="#0097A2" font-family="Inter, arial, sans-serif">${count}</text>
           </g>
         </svg>
       `;
@@ -227,8 +231,8 @@ const clusterOptions = {
         position,
         icon: {
           url: `data:image/svg+xml,${encodeURIComponent(svg)}`,
-          scaledSize: new google.maps.Size(52, 52),
-          anchor: new google.maps.Point(26, 26),
+          scaledSize: new google.maps.Size(size, size),
+          anchor: new google.maps.Point(size/2, size/2),
         },
         label: undefined,
         zIndex: Number(google.maps.Marker.MAX_ZINDEX) + count,
