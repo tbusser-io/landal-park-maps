@@ -1,0 +1,2698 @@
+[
+  {
+    "id": "park-1",
+    "name": "Strand Resort Nieuwvliet-Bad",
+    "country": "Netherlands",
+    "region": "Zeeland",
+    "coordinates": {
+      "lat": 51.37612665260499,
+      "lng": 3.476627237321178
+    },
+    "description": "Welcome to Strand Resort Nieuwvliet-Bad, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park0/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-2",
+    "name": "Beach Resort Ooghduyne",
+    "country": "Netherlands",
+    "region": "Noord-Holland",
+    "coordinates": {
+      "lat": 52.950627149257144,
+      "lng": 4.500135793859511
+    },
+    "description": "Beach Resort Ooghduyne offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park1/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": true,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "20% off spring bookings"
+    }
+  },
+  {
+    "id": "park-3",
+    "name": "Résidence Terschelling",
+    "country": "Netherlands",
+    "region": "Friesland",
+    "coordinates": {
+      "lat": 53.20130113221517,
+      "lng": 5.2828794992948955
+    },
+    "description": "Welcome to Résidence Terschelling, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park2/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-4",
+    "name": "Marinella",
+    "country": "Netherlands",
+    "region": "Noord-Holland",
+    "coordinates": {
+      "lat": 52.86856363745557,
+      "lng": 4.5476828403565595
+    },
+    "description": "Welcome to Marinella, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park3/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-5",
+    "name": "Strand Resort Ouddorp Duin",
+    "country": "Netherlands",
+    "region": "Zuid-Holland",
+    "coordinates": {
+      "lat": 51.78797508722642,
+      "lng": 4.135133770717821
+    },
+    "description": "Strand Resort Ouddorp Duin offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park4/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": true,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-6",
+    "name": "Beach Villas Hoek van Holland",
+    "country": "Netherlands",
+    "region": "Zuid-Holland",
+    "coordinates": {
+      "lat": 52.120589089604614,
+      "lng": 3.9306590553143623
+    },
+    "description": "Discover Beach Villas Hoek van Holland, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park5/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Last minute deal - limited availability"
+    }
+  },
+  {
+    "id": "park-7",
+    "name": "Aerwinkel",
+    "country": "Netherlands",
+    "region": "Zeeland",
+    "coordinates": {
+      "lat": 51.41904192957026,
+      "lng": 3.5242627686444408
+    },
+    "description": "Aerwinkel offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park6/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": true,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Summer special: 3 nights for the price of 2"
+    }
+  },
+  {
+    "id": "park-8",
+    "name": "Het Vennenbos",
+    "country": "Netherlands",
+    "region": "Noord-Brabant",
+    "coordinates": {
+      "lat": 51.326085408807344,
+      "lng": 4.957733191618777
+    },
+    "description": "Experience the charm of Het Vennenbos, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park7/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": true,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Early bird discount: book now and save"
+    }
+  },
+  {
+    "id": "park-9",
+    "name": "Hoog Vaals",
+    "country": "Netherlands",
+    "region": "Limburg",
+    "coordinates": {
+      "lat": 50.936319597230856,
+      "lng": 6.199432684460659
+    },
+    "description": "Experience the charm of Hoog Vaals, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park8/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Autumn discount: up to 25% off"
+    }
+  },
+  {
+    "id": "park-10",
+    "name": "Miggelenberg",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 52.00430152673861,
+      "lng": 5.836366453016689
+    },
+    "description": "Miggelenberg offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park9/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-11",
+    "name": "De Lommerbergen",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 51.95203258491136,
+      "lng": 5.954015413710734
+    },
+    "description": "De Lommerbergen offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park10/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Last minute deal - limited availability"
+    }
+  },
+  {
+    "id": "park-12",
+    "name": "Coldenhove",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 52.02579880323956,
+      "lng": 5.674187541642176
+    },
+    "description": "Experience the charm of Coldenhove, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park11/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-13",
+    "name": "Orveltermarke",
+    "country": "Netherlands",
+    "region": "Drenthe",
+    "coordinates": {
+      "lat": 52.46596018360577,
+      "lng": 6.28961286377273
+    },
+    "description": "Orveltermarke offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park12/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-14",
+    "name": "Dwergter Sand",
+    "country": "Netherlands",
+    "region": "Drenthe",
+    "coordinates": {
+      "lat": 52.61660131147882,
+      "lng": 6.367112886248617
+    },
+    "description": "Welcome to Dwergter Sand, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park13/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Autumn discount: up to 25% off"
+    }
+  },
+  {
+    "id": "park-15",
+    "name": "Rabbit Hill",
+    "country": "Netherlands",
+    "region": "Drenthe",
+    "coordinates": {
+      "lat": 53.031021209166965,
+      "lng": 6.517517828711083
+    },
+    "description": "Welcome to Rabbit Hill, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park14/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-16",
+    "name": "Sonnenberg",
+    "country": "Germany",
+    "region": "Hessen",
+    "coordinates": {
+      "lat": 51.049462234640075,
+      "lng": 9.319352475767193
+    },
+    "description": "Sonnenberg offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park15/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": true,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-17",
+    "name": "Warsberg",
+    "country": "Germany",
+    "region": "Rheinland-Pfalz",
+    "coordinates": {
+      "lat": 49.67152630760513,
+      "lng": 6.612128044803425
+    },
+    "description": "Warsberg offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park16/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Weekend special offer"
+    }
+  },
+  {
+    "id": "park-18",
+    "name": "Hochwald",
+    "country": "Germany",
+    "region": "Rheinland-Pfalz",
+    "coordinates": {
+      "lat": 49.63473026790702,
+      "lng": 6.772306764499546
+    },
+    "description": "Discover Hochwald, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park17/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": true,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-19",
+    "name": "Mont Royal",
+    "country": "Germany",
+    "region": "Rheinland-Pfalz",
+    "coordinates": {
+      "lat": 49.76508827406383,
+      "lng": 6.835105402868541
+    },
+    "description": "Welcome to Mont Royal, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park18/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Early bird discount: book now and save"
+    }
+  },
+  {
+    "id": "park-20",
+    "name": "Winterberg",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 51.074988579276045,
+      "lng": 8.721338845178451
+    },
+    "description": "Winterberg offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park19/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-21",
+    "name": "Am Rothaarsteig",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 51.15429668050809,
+      "lng": 8.367403387432446
+    },
+    "description": "Discover Am Rothaarsteig, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park20/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-22",
+    "name": "Salztal Paradies",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 51.24467350727987,
+      "lng": 8.477175563389304
+    },
+    "description": "Experience the charm of Salztal Paradies, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park21/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-23",
+    "name": "Residenz Am Sternberg",
+    "country": "Germany",
+    "region": "Hessen",
+    "coordinates": {
+      "lat": 50.70051045616234,
+      "lng": 8.771082287721292
+    },
+    "description": "Discover Residenz Am Sternberg, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park22/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-24",
+    "name": "Eifeler Tor",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 50.33273321844904,
+      "lng": 6.422833614471561
+    },
+    "description": "Welcome to Eifeler Tor, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park23/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Weekend special offer"
+    }
+  },
+  {
+    "id": "park-25",
+    "name": "Village les Gottales",
+    "country": "Belgium",
+    "region": "Luxembourg",
+    "coordinates": {
+      "lat": 50.16634667931304,
+      "lng": 5.141473365221936
+    },
+    "description": "Welcome to Village les Gottales, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park24/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-26",
+    "name": "Mont des Pins",
+    "country": "Belgium",
+    "region": "Namur",
+    "coordinates": {
+      "lat": 50.00721517605691,
+      "lng": 5.259471519166439
+    },
+    "description": "Welcome to Mont des Pins, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park25/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-27",
+    "name": "Le Moulin",
+    "country": "Belgium",
+    "region": "Luxembourg",
+    "coordinates": {
+      "lat": 49.78083647529379,
+      "lng": 5.167003818197185
+    },
+    "description": "Discover Le Moulin, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park26/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-28",
+    "name": "Rønbjerg",
+    "country": "Denmark",
+    "region": "Nordjylland",
+    "coordinates": {
+      "lat": 57.10931995422074,
+      "lng": 9.9235666695196
+    },
+    "description": "Rønbjerg offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park27/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-29",
+    "name": "Skærbæk",
+    "country": "Denmark",
+    "region": "Syddanmark",
+    "coordinates": {
+      "lat": 55.05067539270163,
+      "lng": 8.519657536681208
+    },
+    "description": "Welcome to Skærbæk, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park28/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-30",
+    "name": "Ebeltoft",
+    "country": "Denmark",
+    "region": "Midtjylland",
+    "coordinates": {
+      "lat": 56.024186095328375,
+      "lng": 10.916809488053655
+    },
+    "description": "Welcome to Ebeltoft, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park29/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-31",
+    "name": "Strand Resort Nieuwvliet-Bad 2",
+    "country": "Netherlands",
+    "region": "Zeeland",
+    "coordinates": {
+      "lat": 51.37289591869427,
+      "lng": 3.273757038742363
+    },
+    "description": "Discover Strand Resort Nieuwvliet-Bad 2, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park30/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-32",
+    "name": "Beach Resort Ooghduyne 2",
+    "country": "Netherlands",
+    "region": "Noord-Holland",
+    "coordinates": {
+      "lat": 52.86504836998321,
+      "lng": 4.4883486315694405
+    },
+    "description": "Welcome to Beach Resort Ooghduyne 2, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park31/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-33",
+    "name": "Résidence Terschelling 2",
+    "country": "Netherlands",
+    "region": "Friesland",
+    "coordinates": {
+      "lat": 53.29170332088316,
+      "lng": 5.421361570906363
+    },
+    "description": "Experience the charm of Résidence Terschelling 2, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park32/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-34",
+    "name": "Marinella 2",
+    "country": "Netherlands",
+    "region": "Noord-Holland",
+    "coordinates": {
+      "lat": 52.47207830239194,
+      "lng": 4.701292218998913
+    },
+    "description": "Discover Marinella 2, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park33/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-35",
+    "name": "Strand Resort Ouddorp Duin 2",
+    "country": "Netherlands",
+    "region": "Zuid-Holland",
+    "coordinates": {
+      "lat": 51.691724119510646,
+      "lng": 4.041279868684432
+    },
+    "description": "Experience the charm of Strand Resort Ouddorp Duin 2, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park34/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-36",
+    "name": "Beach Villas Hoek van Holland 2",
+    "country": "Netherlands",
+    "region": "Zuid-Holland",
+    "coordinates": {
+      "lat": 51.888042362444274,
+      "lng": 4.242362808659469
+    },
+    "description": "Welcome to Beach Villas Hoek van Holland 2, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park35/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-37",
+    "name": "Aerwinkel 2",
+    "country": "Netherlands",
+    "region": "Zeeland",
+    "coordinates": {
+      "lat": 51.7561737514239,
+      "lng": 3.442737898495293
+    },
+    "description": "Experience the charm of Aerwinkel 2, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park36/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-38",
+    "name": "Het Vennenbos 2",
+    "country": "Netherlands",
+    "region": "Noord-Brabant",
+    "coordinates": {
+      "lat": 51.45308145374747,
+      "lng": 5.149552343361817
+    },
+    "description": "Discover Het Vennenbos 2, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park37/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": true,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-39",
+    "name": "Hoog Vaals 2",
+    "country": "Netherlands",
+    "region": "Limburg",
+    "coordinates": {
+      "lat": 50.93888815880639,
+      "lng": 6.132809131804545
+    },
+    "description": "Discover Hoog Vaals 2, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park38/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-40",
+    "name": "Miggelenberg 2",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 51.986790915081926,
+      "lng": 5.824413812663475
+    },
+    "description": "Experience the charm of Miggelenberg 2, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park39/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": true,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-41",
+    "name": "De Lommerbergen 2",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 51.69581015528875,
+      "lng": 5.819943199080289
+    },
+    "description": "De Lommerbergen 2 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park40/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-42",
+    "name": "Coldenhove 2",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 52.149497689585516,
+      "lng": 5.86563747216461
+    },
+    "description": "Coldenhove 2 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park41/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-43",
+    "name": "Orveltermarke 2",
+    "country": "Netherlands",
+    "region": "Drenthe",
+    "coordinates": {
+      "lat": 52.92138746941544,
+      "lng": 6.456747615870793
+    },
+    "description": "Orveltermarke 2 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park42/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-44",
+    "name": "Dwergter Sand 2",
+    "country": "Netherlands",
+    "region": "Drenthe",
+    "coordinates": {
+      "lat": 53.061736899539746,
+      "lng": 6.516901296973014
+    },
+    "description": "Experience the charm of Dwergter Sand 2, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park43/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-45",
+    "name": "Rabbit Hill 2",
+    "country": "Netherlands",
+    "region": "Drenthe",
+    "coordinates": {
+      "lat": 52.8504177983267,
+      "lng": 6.51685873816805
+    },
+    "description": "Experience the charm of Rabbit Hill 2, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park44/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Last minute deal - limited availability"
+    }
+  },
+  {
+    "id": "park-46",
+    "name": "Sonnenberg 2",
+    "country": "Germany",
+    "region": "Hessen",
+    "coordinates": {
+      "lat": 51.30338663847468,
+      "lng": 8.920053993409274
+    },
+    "description": "Discover Sonnenberg 2, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park45/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Weekend special offer"
+    }
+  },
+  {
+    "id": "park-47",
+    "name": "Warsberg 2",
+    "country": "Germany",
+    "region": "Rheinland-Pfalz",
+    "coordinates": {
+      "lat": 50.063345609155384,
+      "lng": 6.860833929327601
+    },
+    "description": "Welcome to Warsberg 2, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park46/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-48",
+    "name": "Hochwald 2",
+    "country": "Germany",
+    "region": "Rheinland-Pfalz",
+    "coordinates": {
+      "lat": 49.811971722661596,
+      "lng": 7.0905482603774255
+    },
+    "description": "Hochwald 2 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park47/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": true,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "20% off spring bookings"
+    }
+  },
+  {
+    "id": "park-49",
+    "name": "Mont Royal 2",
+    "country": "Germany",
+    "region": "Rheinland-Pfalz",
+    "coordinates": {
+      "lat": 49.89640353756735,
+      "lng": 6.949753548676315
+    },
+    "description": "Discover Mont Royal 2, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park48/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-50",
+    "name": "Winterberg 2",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 51.155258635429774,
+      "lng": 8.372134113329933
+    },
+    "description": "Experience the charm of Winterberg 2, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park49/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": true,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-51",
+    "name": "Am Rothaarsteig 2",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 51.34608792905934,
+      "lng": 8.326036940349956
+    },
+    "description": "Welcome to Am Rothaarsteig 2, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park50/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-52",
+    "name": "Salztal Paradies 2",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 51.004329042786765,
+      "lng": 8.526414918050708
+    },
+    "description": "Welcome to Salztal Paradies 2, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park51/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-53",
+    "name": "Residenz Am Sternberg 2",
+    "country": "Germany",
+    "region": "Hessen",
+    "coordinates": {
+      "lat": 51.049230176609086,
+      "lng": 8.582646499545586
+    },
+    "description": "Welcome to Residenz Am Sternberg 2, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park52/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-54",
+    "name": "Eifeler Tor 2",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 50.59183689138737,
+      "lng": 6.456241956953051
+    },
+    "description": "Discover Eifeler Tor 2, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park53/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-55",
+    "name": "Village les Gottales 2",
+    "country": "Belgium",
+    "region": "Luxembourg",
+    "coordinates": {
+      "lat": 50.07262917191716,
+      "lng": 5.483343815652269
+    },
+    "description": "Village les Gottales 2 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park54/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-56",
+    "name": "Mont des Pins 2",
+    "country": "Belgium",
+    "region": "Namur",
+    "coordinates": {
+      "lat": 50.0107155587308,
+      "lng": 5.393056988093606
+    },
+    "description": "Mont des Pins 2 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park55/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-57",
+    "name": "Le Moulin 2",
+    "country": "Belgium",
+    "region": "Luxembourg",
+    "coordinates": {
+      "lat": 49.95066828615935,
+      "lng": 5.478293711997409
+    },
+    "description": "Discover Le Moulin 2, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park56/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Last minute deal - limited availability"
+    }
+  },
+  {
+    "id": "park-58",
+    "name": "Rønbjerg 2",
+    "country": "Denmark",
+    "region": "Nordjylland",
+    "coordinates": {
+      "lat": 57.26906932437382,
+      "lng": 9.943851844934041
+    },
+    "description": "Welcome to Rønbjerg 2, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park57/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-59",
+    "name": "Skærbæk 2",
+    "country": "Denmark",
+    "region": "Syddanmark",
+    "coordinates": {
+      "lat": 54.992914029035276,
+      "lng": 8.570562450331787
+    },
+    "description": "Discover Skærbæk 2, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park58/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": true,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-60",
+    "name": "Ebeltoft 2",
+    "country": "Denmark",
+    "region": "Midtjylland",
+    "coordinates": {
+      "lat": 55.962403750699046,
+      "lng": 10.509829715834721
+    },
+    "description": "Experience the charm of Ebeltoft 2, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park59/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-61",
+    "name": "Strand Resort Nieuwvliet-Bad 3",
+    "country": "Netherlands",
+    "region": "Zeeland",
+    "coordinates": {
+      "lat": 51.539141919588474,
+      "lng": 3.485881564995175
+    },
+    "description": "Strand Resort Nieuwvliet-Bad 3 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park60/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-62",
+    "name": "Beach Resort Ooghduyne 3",
+    "country": "Netherlands",
+    "region": "Noord-Holland",
+    "coordinates": {
+      "lat": 52.62554658360866,
+      "lng": 4.776198776444289
+    },
+    "description": "Welcome to Beach Resort Ooghduyne 3, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park61/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-63",
+    "name": "Résidence Terschelling 3",
+    "country": "Netherlands",
+    "region": "Friesland",
+    "coordinates": {
+      "lat": 53.53305950244938,
+      "lng": 5.236682998315858
+    },
+    "description": "Discover Résidence Terschelling 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park62/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-64",
+    "name": "Marinella 3",
+    "country": "Netherlands",
+    "region": "Noord-Holland",
+    "coordinates": {
+      "lat": 52.83072016149986,
+      "lng": 4.533927364055607
+    },
+    "description": "Discover Marinella 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park63/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-65",
+    "name": "Strand Resort Ouddorp Duin 3",
+    "country": "Netherlands",
+    "region": "Zuid-Holland",
+    "coordinates": {
+      "lat": 51.84489136745344,
+      "lng": 3.80069056066097
+    },
+    "description": "Strand Resort Ouddorp Duin 3 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park64/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Summer special: 3 nights for the price of 2"
+    }
+  },
+  {
+    "id": "park-66",
+    "name": "Beach Villas Hoek van Holland 3",
+    "country": "Netherlands",
+    "region": "Zuid-Holland",
+    "coordinates": {
+      "lat": 52.12768498173549,
+      "lng": 4.059869122688256
+    },
+    "description": "Experience the charm of Beach Villas Hoek van Holland 3, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park65/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-67",
+    "name": "Aerwinkel 3",
+    "country": "Netherlands",
+    "region": "Zeeland",
+    "coordinates": {
+      "lat": 51.31898309371049,
+      "lng": 3.7394604581160396
+    },
+    "description": "Aerwinkel 3 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park66/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-68",
+    "name": "Het Vennenbos 3",
+    "country": "Netherlands",
+    "region": "Noord-Brabant",
+    "coordinates": {
+      "lat": 51.323398208543345,
+      "lng": 5.073409807857458
+    },
+    "description": "Welcome to Het Vennenbos 3, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park67/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": true,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-69",
+    "name": "Hoog Vaals 3",
+    "country": "Netherlands",
+    "region": "Limburg",
+    "coordinates": {
+      "lat": 50.916119921818066,
+      "lng": 6.197314161904886
+    },
+    "description": "Welcome to Hoog Vaals 3, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park68/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-70",
+    "name": "Miggelenberg 3",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 52.08549365424451,
+      "lng": 5.969103045888353
+    },
+    "description": "Welcome to Miggelenberg 3, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park69/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-71",
+    "name": "De Lommerbergen 3",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 51.69937367487409,
+      "lng": 5.76184333091012
+    },
+    "description": "Discover De Lommerbergen 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park70/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-72",
+    "name": "Coldenhove 3",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 51.97983156345233,
+      "lng": 5.754478812613072
+    },
+    "description": "Welcome to Coldenhove 3, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park71/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-73",
+    "name": "Orveltermarke 3",
+    "country": "Netherlands",
+    "region": "Drenthe",
+    "coordinates": {
+      "lat": 52.604558897429314,
+      "lng": 6.4919301297441185
+    },
+    "description": "Discover Orveltermarke 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park72/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-74",
+    "name": "Dwergter Sand 3",
+    "country": "Netherlands",
+    "region": "Drenthe",
+    "coordinates": {
+      "lat": 52.745555677875466,
+      "lng": 6.63026186932907
+    },
+    "description": "Welcome to Dwergter Sand 3, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park73/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-75",
+    "name": "Rabbit Hill 3",
+    "country": "Netherlands",
+    "region": "Drenthe",
+    "coordinates": {
+      "lat": 52.92573857110296,
+      "lng": 6.700649439277103
+    },
+    "description": "Discover Rabbit Hill 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park74/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-76",
+    "name": "Sonnenberg 3",
+    "country": "Germany",
+    "region": "Hessen",
+    "coordinates": {
+      "lat": 51.18251877014955,
+      "lng": 9.002091907881113
+    },
+    "description": "Sonnenberg 3 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park75/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "20% off spring bookings"
+    }
+  },
+  {
+    "id": "park-77",
+    "name": "Warsberg 3",
+    "country": "Germany",
+    "region": "Rheinland-Pfalz",
+    "coordinates": {
+      "lat": 49.89317567626901,
+      "lng": 6.9489141732817075
+    },
+    "description": "Discover Warsberg 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park76/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-78",
+    "name": "Hochwald 3",
+    "country": "Germany",
+    "region": "Rheinland-Pfalz",
+    "coordinates": {
+      "lat": 49.90043635815258,
+      "lng": 6.982211684521737
+    },
+    "description": "Experience the charm of Hochwald 3, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park77/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": true,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Autumn discount: up to 25% off"
+    }
+  },
+  {
+    "id": "park-79",
+    "name": "Mont Royal 3",
+    "country": "Germany",
+    "region": "Rheinland-Pfalz",
+    "coordinates": {
+      "lat": 50.171597998923886,
+      "lng": 7.288927266886677
+    },
+    "description": "Discover Mont Royal 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park78/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Weekend special offer"
+    }
+  },
+  {
+    "id": "park-80",
+    "name": "Winterberg 3",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 51.024322575412086,
+      "lng": 8.460974193640233
+    },
+    "description": "Winterberg 3 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park79/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-81",
+    "name": "Am Rothaarsteig 3",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 50.99865817782301,
+      "lng": 8.28396462014067
+    },
+    "description": "Welcome to Am Rothaarsteig 3, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park80/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-82",
+    "name": "Salztal Paradies 3",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 50.98129384585672,
+      "lng": 8.120216114320058
+    },
+    "description": "Experience the charm of Salztal Paradies 3, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park81/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-83",
+    "name": "Residenz Am Sternberg 3",
+    "country": "Germany",
+    "region": "Hessen",
+    "coordinates": {
+      "lat": 50.73643277406395,
+      "lng": 8.766385929803393
+    },
+    "description": "Discover Residenz Am Sternberg 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park82/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "20% off spring bookings"
+    }
+  },
+  {
+    "id": "park-84",
+    "name": "Eifeler Tor 3",
+    "country": "Germany",
+    "region": "Nordrhein-Westfalen",
+    "coordinates": {
+      "lat": 50.56814508380703,
+      "lng": 6.270685550566662
+    },
+    "description": "Eifeler Tor 3 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park83/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-85",
+    "name": "Village les Gottales 3",
+    "country": "Belgium",
+    "region": "Luxembourg",
+    "coordinates": {
+      "lat": 50.256961267329444,
+      "lng": 5.353709024013471
+    },
+    "description": "Welcome to Village les Gottales 3, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park84/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-86",
+    "name": "Mont des Pins 3",
+    "country": "Belgium",
+    "region": "Namur",
+    "coordinates": {
+      "lat": 49.95162973226909,
+      "lng": 5.6004848882726765
+    },
+    "description": "Welcome to Mont des Pins 3, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park85/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-87",
+    "name": "Le Moulin 3",
+    "country": "Belgium",
+    "region": "Luxembourg",
+    "coordinates": {
+      "lat": 50.12258308403948,
+      "lng": 5.443099556907429
+    },
+    "description": "Discover Le Moulin 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park86/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-88",
+    "name": "Rønbjerg 3",
+    "country": "Denmark",
+    "region": "Nordjylland",
+    "coordinates": {
+      "lat": 57.30623848601106,
+      "lng": 9.6956616722412
+    },
+    "description": "Rønbjerg 3 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park87/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Summer special: 3 nights for the price of 2"
+    }
+  },
+  {
+    "id": "park-89",
+    "name": "Skærbæk 3",
+    "country": "Denmark",
+    "region": "Syddanmark",
+    "coordinates": {
+      "lat": 54.996163711384625,
+      "lng": 8.7081294714429
+    },
+    "description": "Experience the charm of Skærbæk 3, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park88/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-90",
+    "name": "Ebeltoft 3",
+    "country": "Denmark",
+    "region": "Midtjylland",
+    "coordinates": {
+      "lat": 56.30201030894312,
+      "lng": 10.525973777739743
+    },
+    "description": "Discover Ebeltoft 3, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park89/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Last minute deal - limited availability"
+    }
+  },
+  {
+    "id": "park-91",
+    "name": "Strand Resort Nieuwvliet-Bad 4",
+    "country": "Netherlands",
+    "region": "Zeeland",
+    "coordinates": {
+      "lat": 51.22909945028466,
+      "lng": 3.515997634650091
+    },
+    "description": "Discover Strand Resort Nieuwvliet-Bad 4, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park90/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "20% off spring bookings"
+    }
+  },
+  {
+    "id": "park-92",
+    "name": "Beach Resort Ooghduyne 4",
+    "country": "Netherlands",
+    "region": "Noord-Holland",
+    "coordinates": {
+      "lat": 52.56610603876547,
+      "lng": 4.591625763173546
+    },
+    "description": "Beach Resort Ooghduyne 4 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park91/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": true,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-93",
+    "name": "Résidence Terschelling 4",
+    "country": "Netherlands",
+    "region": "Friesland",
+    "coordinates": {
+      "lat": 53.60587445587904,
+      "lng": 5.0258690290629975
+    },
+    "description": "Discover Résidence Terschelling 4, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park92/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": true,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Weekend special offer"
+    }
+  },
+  {
+    "id": "park-94",
+    "name": "Marinella 4",
+    "country": "Netherlands",
+    "region": "Noord-Holland",
+    "coordinates": {
+      "lat": 52.590112519792996,
+      "lng": 4.829160367247189
+    },
+    "description": "Welcome to Marinella 4, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park93/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": true,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-95",
+    "name": "Strand Resort Ouddorp Duin 4",
+    "country": "Netherlands",
+    "region": "Zuid-Holland",
+    "coordinates": {
+      "lat": 52.043846473909205,
+      "lng": 3.831940900612065
+    },
+    "description": "Welcome to Strand Resort Ouddorp Duin 4, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park94/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-96",
+    "name": "Beach Villas Hoek van Holland 4",
+    "country": "Netherlands",
+    "region": "Zuid-Holland",
+    "coordinates": {
+      "lat": 52.00823284429842,
+      "lng": 4.329755854396421
+    },
+    "description": "Discover Beach Villas Hoek van Holland 4, where relaxation meets recreation for an unforgettable holiday experience.",
+    "imageUrl": "https://picsum.photos/seed/park95/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": true,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-97",
+    "name": "Aerwinkel 4",
+    "country": "Netherlands",
+    "region": "Zeeland",
+    "coordinates": {
+      "lat": 51.49153453273529,
+      "lng": 3.917302556280543
+    },
+    "description": "Experience the charm of Aerwinkel 4, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park96/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": false,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    },
+    "promotion": {
+      "active": true,
+      "text": "Weekend special offer"
+    }
+  },
+  {
+    "id": "park-98",
+    "name": "Het Vennenbos 4",
+    "country": "Netherlands",
+    "region": "Noord-Brabant",
+    "coordinates": {
+      "lat": 51.3385608913272,
+      "lng": 5.083127510180769
+    },
+    "description": "Welcome to Het Vennenbos 4, a beautiful vacation park perfect for families and nature lovers.",
+    "imageUrl": "https://picsum.photos/seed/park97/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": true,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": false,
+      "wellness": true,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": true,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-99",
+    "name": "Hoog Vaals 4",
+    "country": "Netherlands",
+    "region": "Limburg",
+    "coordinates": {
+      "lat": 50.560732457866926,
+      "lng": 5.922692078948336
+    },
+    "description": "Hoog Vaals 4 offers a unique blend of comfort and outdoor adventure in a stunning natural setting.",
+    "imageUrl": "https://picsum.photos/seed/park98/800/600",
+    "features": {
+      "indoorPool": false,
+      "swimmingParadise": true,
+      "petsAllowed": false,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": true,
+      "restaurant": true
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  },
+  {
+    "id": "park-100",
+    "name": "Miggelenberg 4",
+    "country": "Netherlands",
+    "region": "Gelderland",
+    "coordinates": {
+      "lat": 52.04308282465753,
+      "lng": 5.673536008855341
+    },
+    "description": "Experience the charm of Miggelenberg 4, your ideal destination for a peaceful getaway.",
+    "imageUrl": "https://picsum.photos/seed/park99/800/600",
+    "features": {
+      "indoorPool": true,
+      "swimmingParadise": false,
+      "petsAllowed": true,
+      "luxury": false,
+      "childFriendly": true,
+      "wellness": false,
+      "restaurant": false
+    },
+    "location": {
+      "nearSea": false,
+      "forest": false,
+      "nearLake": false
+    }
+  }
+]
