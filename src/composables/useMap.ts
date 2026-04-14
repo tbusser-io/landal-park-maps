@@ -2,13 +2,23 @@ import { ref, type Ref } from 'vue';
 import type { Park } from '../types/Park';
 import { MarkerClusterer } from '@googlemaps/markerclusterer';
 
-export function useMap(mapElementRef: Ref<HTMLElement | null>) {
-  const map = ref<google.maps.Map | null>(null);
-  const markers = ref<google.maps.Marker[]>([]);
-  const markerClusterer = ref<MarkerClusterer | null>(null);
+// Singleton state - shared across all useMap calls
+const map = ref<google.maps.Map | null>(null);
+const markers = ref<google.maps.Marker[]>([]);
+const markerClusterer = ref<MarkerClusterer | null>(null);
+let initCount = 0;
 
-  // Initialize map
+// Global marker tracking - track EVERY marker ever created
+const allMarkersEverCreated: google.maps.Marker[] = [];
+let markerIdCounter = 0;
+
+export function useMap(mapElementRef: Ref<HTMLElement | null>) {
+  // Initialize map (only creates one map instance)
   const initMap = () => {
+    if (map.value) {
+      return;
+    }
+
     if (!mapElementRef.value || !window.google) {
       console.error('Map element or Google Maps not available');
       return;
@@ -32,16 +42,27 @@ export function useMap(mapElementRef: Ref<HTMLElement | null>) {
   ) => {
     if (!map.value) return;
 
-    // Clear existing markers
-    markers.value.forEach((m) => m.setMap(null));
-    markers.value = [];
-
     // Clear existing clusterer
     if (markerClusterer.value) {
       markerClusterer.value.clearMarkers();
+      markerClusterer.value = null;
     }
 
-    // Create new markers
+    // Clear ALL markers ever created
+    allMarkersEverCreated.forEach((m) => {
+      google.maps.event.clearInstanceListeners(m);
+      m.setMap(null);
+    });
+
+    markers.value = [];
+
+    // If no parks, just return after clearing
+    if (parks.length === 0) {
+      return;
+    }
+
+    // Create new markers for filtered parks only
+    const newMarkers: google.maps.Marker[] = [];
     parks.forEach((park) => {
       const isVisited = visitedParkIds.includes(park.id);
       const hasPromotion = park.promotion?.active || false;
@@ -55,29 +76,23 @@ export function useMap(mapElementRef: Ref<HTMLElement | null>) {
 
       marker.addListener('click', () => onMarkerClick(park));
 
-      markers.value.push(marker);
+      // Track in BOTH arrays
+      newMarkers.push(marker);
+      allMarkersEverCreated.push(marker);
     });
 
-    // Update clustering
-    updateClustering();
+    markers.value = newMarkers;
 
-    // Fit bounds to show all markers
-    if (parks.length > 0) {
+    // Create marker clusterer for better visualization
+    if (markers.value.length > 0) {
+      markerClusterer.value = new MarkerClusterer({
+        map: map.value,
+        markers: markers.value,
+      });
+
+      // Fit bounds to show all markers
       fitBounds();
     }
-  };
-
-  const updateClustering = () => {
-    if (!map.value) return;
-
-    if (markerClusterer.value) {
-      markerClusterer.value.clearMarkers();
-    }
-
-    markerClusterer.value = new MarkerClusterer({
-      map: map.value,
-      markers: markers.value,
-    });
   };
 
   const fitBounds = () => {

@@ -3,23 +3,25 @@ import type { Park } from '../types/Park';
 import { useAuth } from './useAuth';
 import { useFilters } from './useFilters';
 
+// Shared state (singleton) - created once, shared by all components
+const allParks = ref<Park[]>([]);
+const loading = ref(true);
+
+// Load parks.json immediately
+(async () => {
+  try {
+    const module = await import('../data/parks.json');
+    allParks.value = module.default;
+    loading.value = false;
+  } catch (error) {
+    console.error('Failed to load parks:', error);
+    loading.value = false;
+  }
+})();
+
 export function useParks() {
-  const allParks = ref<Park[]>([]);
-  const loading = ref(true);
   const { user } = useAuth();
   const { filterState } = useFilters();
-
-  // Load parks.json on mount
-  onMounted(async () => {
-    try {
-      const module = await import('../data/parks.json');
-      allParks.value = module.default;
-      loading.value = false;
-    } catch (error) {
-      console.error('Failed to load parks:', error);
-      loading.value = false;
-    }
-  });
 
   // Computed: apply all active filters
   const filteredParks = computed(() => {

@@ -1,15 +1,17 @@
 import { reactive, computed } from 'vue';
 import type { FilterState, FilterChip } from '../types/Park';
 
+// Shared state (singleton) - created once, shared by all components
+const filterState = reactive<FilterState>({
+  countries: [],
+  features: [],
+  locations: [],
+  showVisitedOnly: false,
+  showUnvisitedOnly: false,
+  showPromotionsOnly: false,
+});
+
 export function useFilters() {
-  const filterState = reactive<FilterState>({
-    countries: [],
-    features: [],
-    locations: [],
-    showVisitedOnly: false,
-    showUnvisitedOnly: false,
-    showPromotionsOnly: false,
-  });
 
   // Computed: active filter chips for display
   const activeFilters = computed(() => {

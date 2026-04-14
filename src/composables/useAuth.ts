@@ -17,22 +17,22 @@ const MOCK_USERS: User[] = [
   },
 ];
 
-export function useAuth() {
-  const user = ref<User | null>(null);
-  const isAuthenticated = computed(() => user.value !== null);
+// Shared state (singleton) - created once, shared by all components
+const user = ref<User | null>(null);
+const isAuthenticated = computed(() => user.value !== null);
 
-  // Restore from localStorage on mount
-  onMounted(() => {
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        user.value = JSON.parse(stored);
-      }
-    } catch (e) {
-      console.error('Failed to restore auth', e);
-      localStorage.removeItem(STORAGE_KEY);
-    }
-  });
+// Restore from localStorage immediately
+try {
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored) {
+    user.value = JSON.parse(stored);
+  }
+} catch (e) {
+  console.error('Failed to restore auth', e);
+  localStorage.removeItem(STORAGE_KEY);
+}
+
+export function useAuth() {
 
   const login = (email: string, password: string): boolean => {
     const found = MOCK_USERS.find((u) => u.email === email);

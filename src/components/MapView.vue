@@ -25,29 +25,21 @@ onMounted(() => {
   }
 });
 
-// Watch for changes in filtered parks and update markers
+// Watch for changes in filtered parks, map, and user state
 watch(
-  [filteredParks, () => user.value?.visitedParkIds],
+  [filteredParks, () => user.value?.visitedParkIds, map, loading],
   () => {
-    if (map.value && !loading.value) {
+    if (map.value && !loading.value && filteredParks.value.length > 0) {
       const visitedIds = user.value?.visitedParkIds || [];
       updateMarkers(filteredParks.value, visitedIds, (park) => {
         emit('markerClick', park);
       });
+    } else if (map.value && !loading.value && filteredParks.value.length === 0) {
+      // Clear markers if no parks match filters
+      updateMarkers([], [], () => {});
     }
-  },
-  { immediate: true }
-);
-
-// Initialize markers when map is ready
-watch(map, (newMap) => {
-  if (newMap && !loading.value && filteredParks.value.length > 0) {
-    const visitedIds = user.value?.visitedParkIds || [];
-    updateMarkers(filteredParks.value, visitedIds, (park) => {
-      emit('markerClick', park);
-    });
   }
-});
+);
 </script>
 
 <template>
