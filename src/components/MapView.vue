@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 import { GoogleMap, Marker, MarkerCluster } from 'vue3-google-map';
 import { useParks } from '../composables/useParks';
 import { useAuth } from '../composables/useAuth';
@@ -21,8 +21,18 @@ const { user } = useAuth();
 const mapCenter = { lat: 51.0, lng: 10.0 }; // Center of Europe
 const mapRef = ref<InstanceType<typeof GoogleMap> | null>(null);
 
-// Watch for changes in filtered parks and adjust bounds
-watch(filteredParks, async (parks) => {
+// Map options to hide controls
+const mapOptions = {
+  mapTypeControl: false,
+  mapTypeId: 'roadmap',
+  streetViewControl: false,
+  fullscreenControl: false,
+  zoomControl: true,
+  gestureHandling: 'greedy',
+};
+
+// Function to fit map bounds with proper padding
+const fitMapBounds = async (parks: Park[]) => {
   if (parks.length === 0 || !mapRef.value) return;
 
   try {
@@ -36,11 +46,60 @@ watch(filteredParks, async (parks) => {
       parks.forEach((park) => {
         bounds.extend(park.coordinates);
       });
-      mapInstance.fitBounds(bounds);
+
+      // Add padding to account for overlays on desktop
+      // Left: 300px (filter sidebar + margins)
+      // Right: 420px if side panel open, 20px otherwise
+      // Top/Bottom: 20px
+      const isMobile = window.innerWidth <= 767;
+      const padding = isMobile
+        ? { top: 20, right: 20, bottom: 100, left: 20 } // Mobile padding
+        : {
+            top: 20,
+            right: props.selectedPark ? 420 : 20,
+            bottom: 20,
+            left: 300
+          };
+
+      mapInstance.fitBounds(bounds, padding);
     }, 100);
   } catch (error) {
     console.error('Error fitting bounds:', error);
   }
+};
+
+// Watch for changes in filtered parks and adjust bounds
+watch(filteredParks, (parks) => {
+  fitMapBounds(parks);
+});
+
+// Watch for changes in selected park to adjust bounds when side panel opens/closes
+watch(() => props.selectedPark, () => {
+  fitMapBounds(filteredParks.value);
+});
+
+// Apply map options after component mounts
+onMounted(async () => {
+  // Wait a bit for the map to initialize
+  setTimeout(async () => {
+    if (!mapRef.value) return;
+
+    try {
+      const mapInstance = await mapRef.value.map;
+      if (mapInstance) {
+        // Force hide map type control
+        mapInstance.setOptions({
+          mapTypeControl: false,
+          mapTypeId: 'roadmap',
+          streetViewControl: false,
+          fullscreenControl: false,
+        });
+        console.log('Map options set successfully');
+      }
+    } catch (error) {
+      console.error('Error setting map options:', error);
+    }
+  }, 500);
 });
 
 const getMarkerIcon = (park: Park) => {
@@ -165,6 +224,7 @@ const clusterOptions = {
       api-key="AIzaSyBFndI0-S8lHHyfTIzNApFxOLPfFDVBEAM"
       :center="mapCenter"
       :zoom="5"
+      :options="mapOptions"
       class="map-element"
     >
       <MarkerCluster :options="clusterOptions">
@@ -211,6 +271,17 @@ const clusterOptions = {
 .map-element {
   width: 100%;
   height: 100%;
+}
+
+/* Hide Google Maps controls via CSS as fallback */
+.map-element :deep(.gm-style-mtc) {
+  display: none !important;
+}
+
+/* Also hide the map type control button */
+.map-element :deep(button[title="Show satellite imagery"]),
+.map-element :deep(button[title="Show street map"]) {
+  display: none !important;
 }
 
 .loading-skeleton {

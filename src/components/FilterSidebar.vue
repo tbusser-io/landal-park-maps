@@ -148,8 +148,8 @@ const resultCount = computed(() => filteredParks.value.length);
 <style scoped>
 .filter-sidebar {
   background: white;
-  border-right: 1px solid #e5e7eb;
-  height: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -161,6 +161,7 @@ const resultCount = computed(() => filteredParks.value.length);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 8px 8px 0 0;
 }
 
 .sidebar-header h2 {
@@ -316,6 +317,11 @@ const resultCount = computed(() => filteredParks.value.length);
     max-width: 320px;
     z-index: 200;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    border-right: 1px solid #e5e7eb;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
   }
 
   .close-button-mobile {
