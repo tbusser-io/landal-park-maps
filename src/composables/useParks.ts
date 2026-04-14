@@ -27,16 +27,14 @@ export function useParks() {
   const filteredParks = computed(() => {
     return allParks.value.filter((park) => {
       // 1. Country filters (tri-state)
+      // First, handle exclude filters
       for (const [country, filterValue] of Object.entries(filterState.countries)) {
         if (filterValue === 'exclude' && park.country === country) {
           return false; // Exclude parks from this country
         }
-        if (filterValue === 'must' && park.country !== country) {
-          return false; // Only include parks from this country
-        }
       }
 
-      // Check if any 'must' country filter exists
+      // Then check if park matches any 'must' countries (OR logic)
       const mustCountries = Object.entries(filterState.countries)
         .filter(([_, value]) => value === 'must')
         .map(([country]) => country);
