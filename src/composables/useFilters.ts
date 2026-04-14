@@ -1,11 +1,11 @@
 import { reactive, computed } from 'vue';
-import type { FilterState, FilterChip } from '../types/Park';
+import type { FilterState, FilterChip, FilterValue } from '../types/Park';
 
 // Shared state (singleton) - created once, shared by all components
 const filterState = reactive<FilterState>({
-  countries: [],
-  features: [],
-  locations: [],
+  countries: {},
+  features: {},
+  locations: {},
   showVisitedOnly: false,
   showUnvisitedOnly: false,
   showPromotionsOnly: false,
@@ -13,36 +13,91 @@ const filterState = reactive<FilterState>({
 
 export function useFilters() {
 
-  // Computed: active filter chips for display
+  // Computed: active filter chips for display (only show non-'any' filters)
   const activeFilters = computed(() => {
     const chips: FilterChip[] = [];
 
-    filterState.countries.forEach((c) =>
-      chips.push({ label: c, key: 'countries', value: c })
-    );
+    Object.entries(filterState.countries).forEach(([country, filterValue]) => {
+      if (filterValue !== 'any') {
+        chips.push({
+          label: country,
+          key: 'countries',
+          value: country,
+          filterValue
+        });
+      }
+    });
 
-    filterState.features.forEach((f) =>
-      chips.push({ label: formatFilterLabel(f), key: 'features', value: f })
-    );
+    Object.entries(filterState.features).forEach(([feature, filterValue]) => {
+      if (filterValue !== 'any') {
+        chips.push({
+          label: formatFilterLabel(feature),
+          key: 'features',
+          value: feature,
+          filterValue
+        });
+      }
+    });
 
-    filterState.locations.forEach((l) =>
-      chips.push({ label: formatFilterLabel(l), key: 'locations', value: l })
-    );
+    Object.entries(filterState.locations).forEach(([location, filterValue]) => {
+      if (filterValue !== 'any') {
+        chips.push({
+          label: formatFilterLabel(location),
+          key: 'locations',
+          value: location,
+          filterValue
+        });
+      }
+    });
 
     if (filterState.showVisitedOnly) {
-      chips.push({ label: 'Visited', key: 'special', value: 'visited' });
+      chips.push({
+        label: 'Visited',
+        key: 'special',
+        value: 'visited',
+        filterValue: 'must'
+      });
     }
 
     if (filterState.showUnvisitedOnly) {
-      chips.push({ label: 'Not Visited', key: 'special', value: 'unvisited' });
+      chips.push({
+        label: 'Not Visited',
+        key: 'special',
+        value: 'unvisited',
+        filterValue: 'must'
+      });
     }
 
     if (filterState.showPromotionsOnly) {
-      chips.push({ label: 'Promotions', key: 'special', value: 'promotions' });
+      chips.push({
+        label: 'Promotions',
+        key: 'special',
+        value: 'promotions',
+        filterValue: 'must'
+      });
     }
 
     return chips;
   });
+
+  const setFilter = (
+    category: 'countries' | 'features' | 'locations',
+    value: string,
+    filterValue: FilterValue
+  ) => {
+    if (filterValue === 'any') {
+      delete filterState[category][value];
+    } else {
+      filterState[category][value] = filterValue;
+    }
+  };
+
+  const getFilter = (
+    category: 'countries' | 'features' | 'locations',
+    value: string
+  ): FilterValue => {
+    return filterState[category][value] || 'any';
+  };
 
   const toggleFilter = (category: string, value: string) => {
     if (category === 'special') {
@@ -55,21 +110,13 @@ export function useFilters() {
       } else if (value === 'promotions') {
         filterState.showPromotionsOnly = !filterState.showPromotionsOnly;
       }
-    } else {
-      const arr = filterState[category as keyof typeof filterState] as string[];
-      const index = arr.indexOf(value);
-      if (index > -1) {
-        arr.splice(index, 1);
-      } else {
-        arr.push(value);
-      }
     }
   };
 
   const clearAll = () => {
-    filterState.countries = [];
-    filterState.features = [];
-    filterState.locations = [];
+    filterState.countries = {};
+    filterState.features = {};
+    filterState.locations = {};
     filterState.showVisitedOnly = false;
     filterState.showUnvisitedOnly = false;
     filterState.showPromotionsOnly = false;
@@ -81,9 +128,8 @@ export function useFilters() {
       if (chip.value === 'unvisited') filterState.showUnvisitedOnly = false;
       if (chip.value === 'promotions') filterState.showPromotionsOnly = false;
     } else {
-      const arr = filterState[chip.key as keyof typeof filterState] as string[];
-      const index = arr.indexOf(chip.value);
-      if (index > -1) arr.splice(index, 1);
+      const category = chip.key as 'countries' | 'features' | 'locations';
+      delete filterState[category][chip.value];
     }
   };
 
@@ -98,6 +144,8 @@ export function useFilters() {
   return {
     filterState,
     activeFilters,
+    setFilter,
+    getFilter,
     toggleFilter,
     clearAll,
     removeChip,

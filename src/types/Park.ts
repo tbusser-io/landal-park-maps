@@ -38,10 +38,12 @@ export type User = {
   visitedParkIds: string[];
 };
 
+export type FilterValue = 'exclude' | 'any' | 'must';
+
 export type FilterState = {
-  countries: string[];
-  features: string[];
-  locations: string[];
+  countries: Record<string, FilterValue>;
+  features: Record<string, FilterValue>;
+  locations: Record<string, FilterValue>;
   showVisitedOnly: boolean;
   showUnvisitedOnly: boolean;
   showPromotionsOnly: boolean;
@@ -51,4 +53,5 @@ export type FilterChip = {
   label: string;
   key: string;
   value: string;
+  filterValue: FilterValue;
 };

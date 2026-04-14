@@ -3,12 +3,13 @@ import { computed } from 'vue';
 import { useFilters } from '../composables/useFilters';
 import { useParks } from '../composables/useParks';
 import { useAuth } from '../composables/useAuth';
+import TriStateToggle from './TriStateToggle.vue';
 
 const emit = defineEmits<{
   close: [];
 }>();
 
-const { filterState, activeFilters, toggleFilter, clearAll, removeChip } = useFilters();
+const { filterState, activeFilters, setFilter, getFilter, toggleFilter, clearAll, removeChip } = useFilters();
 const { filteredParks } = useParks();
 const { isAuthenticated } = useAuth();
 
@@ -57,8 +58,10 @@ const resultCount = computed(() => filteredParks.value.length);
           v-for="chip in activeFilters"
           :key="`${chip.key}-${chip.value}`"
           class="filter-chip"
+          :class="`chip-${chip.filterValue}`"
           @click="removeChip(chip)"
         >
+          <span class="chip-icon">{{ chip.filterValue === 'exclude' ? '✕' : '✓' }}</span>
           {{ chip.label }}
           <span class="chip-remove">×</span>
         </button>
@@ -70,18 +73,13 @@ const resultCount = computed(() => filteredParks.value.length);
       <div class="filter-section">
         <h3 class="filter-title">Country</h3>
         <div class="filter-options">
-          <label
+          <TriStateToggle
             v-for="country in countries"
             :key="country"
-            class="checkbox-label"
-          >
-            <input
-              type="checkbox"
-              :checked="filterState.countries.includes(country)"
-              @change="toggleFilter('countries', country)"
-            />
-            <span>{{ country }}</span>
-          </label>
+            :label="country"
+            :model-value="getFilter('countries', country)"
+            @update:model-value="(value) => setFilter('countries', country, value)"
+          />
         </div>
       </div>
 
@@ -89,18 +87,13 @@ const resultCount = computed(() => filteredParks.value.length);
       <div class="filter-section">
         <h3 class="filter-title">Amenities</h3>
         <div class="filter-options">
-          <label
+          <TriStateToggle
             v-for="feature in features"
             :key="feature.key"
-            class="checkbox-label"
-          >
-            <input
-              type="checkbox"
-              :checked="filterState.features.includes(feature.key)"
-              @change="toggleFilter('features', feature.key)"
-            />
-            <span>{{ feature.label }}</span>
-          </label>
+            :label="feature.label"
+            :model-value="getFilter('features', feature.key)"
+            @update:model-value="(value) => setFilter('features', feature.key, value)"
+          />
         </div>
       </div>
 
@@ -108,18 +101,13 @@ const resultCount = computed(() => filteredParks.value.length);
       <div class="filter-section">
         <h3 class="filter-title">Location Type</h3>
         <div class="filter-options">
-          <label
+          <TriStateToggle
             v-for="location in locations"
             :key="location.key"
-            class="checkbox-label"
-          >
-            <input
-              type="checkbox"
-              :checked="filterState.locations.includes(location.key)"
-              @change="toggleFilter('locations', location.key)"
-            />
-            <span>{{ location.label }}</span>
-          </label>
+            :label="location.label"
+            :model-value="getFilter('locations', location.key)"
+            @update:model-value="(value) => setFilter('locations', location.key, value)"
+          />
         </div>
       </div>
 
@@ -260,8 +248,29 @@ const resultCount = computed(() => filteredParks.value.length);
   transition: background 0.2s;
 }
 
+.filter-chip.chip-exclude {
+  background: #dc2626;
+}
+
+.filter-chip.chip-exclude:hover {
+  background: #b91c1c;
+}
+
+.filter-chip.chip-must {
+  background: #059669;
+}
+
+.filter-chip.chip-must:hover {
+  background: #047857;
+}
+
 .filter-chip:hover {
   background: #2563eb;
+}
+
+.chip-icon {
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .chip-remove {
@@ -295,27 +304,7 @@ const resultCount = computed(() => filteredParks.value.length);
 .filter-options {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.checkbox-label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #374151;
-}
-
-.checkbox-label input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  accent-color: #3b82f6;
-}
-
-.checkbox-label:hover {
-  color: #1f2937;
+  gap: 4px;
 }
 
 .auth-hint {

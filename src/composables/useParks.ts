@@ -23,35 +23,52 @@ export function useParks() {
   const { user } = useAuth();
   const { filterState } = useFilters();
 
-  // Computed: apply all active filters
+  // Computed: apply all active filters with tri-state logic
   const filteredParks = computed(() => {
     return allParks.value.filter((park) => {
-      // 1. Country filter (OR logic within countries)
-      if (filterState.countries.length > 0) {
-        if (!filterState.countries.includes(park.country)) return false;
+      // 1. Country filters (tri-state)
+      for (const [country, filterValue] of Object.entries(filterState.countries)) {
+        if (filterValue === 'exclude' && park.country === country) {
+          return false; // Exclude parks from this country
+        }
+        if (filterValue === 'must' && park.country !== country) {
+          return false; // Only include parks from this country
+        }
       }
 
-      // 2. Feature filters (AND logic - must have ALL selected features)
-      for (const feature of filterState.features) {
-        if (feature === 'indoorPool' && !park.features.indoorPool) return false;
-        if (feature === 'petsAllowed' && !park.features.petsAllowed) return false;
-        if (feature === 'luxury' && !park.features.luxury) return false;
-        if (feature === 'swimmingParadise' && !park.features.swimmingParadise)
-          return false;
-        if (feature === 'childFriendly' && !park.features.childFriendly) return false;
-        if (feature === 'wellness' && !park.features.wellness) return false;
-        if (feature === 'restaurant' && !park.features.restaurant) return false;
+      // Check if any 'must' country filter exists
+      const mustCountries = Object.entries(filterState.countries)
+        .filter(([_, value]) => value === 'must')
+        .map(([country]) => country);
+
+      if (mustCountries.length > 0 && !mustCountries.includes(park.country)) {
+        return false; // Park doesn't match any required country
       }
 
-      // 3. Location filters (OR logic - match ANY selected location)
-      if (filterState.locations.length > 0) {
-        const matchesLocation = filterState.locations.some((loc) => {
-          if (loc === 'nearSea') return park.location.nearSea;
-          if (loc === 'forest') return park.location.forest;
-          if (loc === 'nearLake') return park.location.nearLake;
-          return false;
-        });
-        if (!matchesLocation) return false;
+      // 2. Feature filters (tri-state)
+      for (const [feature, filterValue] of Object.entries(filterState.features)) {
+        const featureKey = feature as keyof typeof park.features;
+        const hasFeature = park.features[featureKey];
+
+        if (filterValue === 'exclude' && hasFeature) {
+          return false; // Exclude parks that have this feature
+        }
+        if (filterValue === 'must' && !hasFeature) {
+          return false; // Only include parks that have this feature
+        }
+      }
+
+      // 3. Location filters (tri-state)
+      for (const [location, filterValue] of Object.entries(filterState.locations)) {
+        const locationKey = location as keyof typeof park.location;
+        const hasLocation = park.location[locationKey];
+
+        if (filterValue === 'exclude' && hasLocation) {
+          return false; // Exclude parks with this location type
+        }
+        if (filterValue === 'must' && !hasLocation) {
+          return false; // Only include parks with this location type
+        }
       }
 
       // 4. Visited filter
