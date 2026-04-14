@@ -20,6 +20,7 @@ const { user } = useAuth();
 
 const mapCenter = { lat: 51.0, lng: 10.0 }; // Center of Europe
 const mapRef = ref<InstanceType<typeof GoogleMap> | null>(null);
+const mapReady = ref(false); // Track when map bounds are properly set
 
 // Map options to hide controls
 const mapOptions = {
@@ -31,14 +32,22 @@ const mapOptions = {
   gestureHandling: 'greedy',
 };
 
+// Track if this is the first bounds fit
+const isFirstBoundsFit = ref(true);
+
 // Function to fit map bounds with proper padding
 const fitMapBounds = async (parks: Park[]) => {
-  if (parks.length === 0 || !mapRef.value) return;
+  if (parks.length === 0 || !mapRef.value) {
+    return;
+  }
 
   try {
     // Wait for the map instance to be ready
     const mapInstance = await mapRef.value.map;
     if (!mapInstance) return;
+
+    // Use longer delay on first load to ensure map is fully initialized
+    const delay = isFirstBoundsFit.value ? 500 : 100;
 
     // Small delay to ensure markers are rendered
     setTimeout(() => {
@@ -62,7 +71,13 @@ const fitMapBounds = async (parks: Park[]) => {
           };
 
       mapInstance.fitBounds(bounds, padding);
-    }, 100);
+
+      // Mark map as ready after first successful bounds fit
+      if (isFirstBoundsFit.value) {
+        isFirstBoundsFit.value = false;
+        mapReady.value = true;
+      }
+    }, delay);
   } catch (error) {
     console.error('Error fitting bounds:', error);
   }
@@ -71,7 +86,7 @@ const fitMapBounds = async (parks: Park[]) => {
 // Watch for changes in filtered parks and adjust bounds
 watch(filteredParks, (parks) => {
   fitMapBounds(parks);
-});
+}, { immediate: true });
 
 // Watch for changes in selected park to adjust bounds when side panel opens/closes
 watch(() => props.selectedPark, () => {
@@ -94,7 +109,9 @@ onMounted(async () => {
           streetViewControl: false,
           fullscreenControl: false,
         });
-        console.log('Map options set successfully');
+
+        // Explicitly fit bounds after map is ready
+        fitMapBounds(filteredParks.value);
       }
     } catch (error) {
       console.error('Error setting map options:', error);
@@ -214,7 +231,7 @@ const clusterOptions = {
 
 <template>
   <div class="map-container">
-    <div v-if="loading" class="loading-skeleton">
+    <div v-if="loading || !mapReady" class="loading-skeleton">
       <div class="skeleton-pulse"></div>
       <span>Loading parks...</span>
     </div>
@@ -226,6 +243,7 @@ const clusterOptions = {
       :zoom="5"
       :options="mapOptions"
       class="map-element"
+      :style="{ visibility: mapReady ? 'visible' : 'hidden' }"
     >
       <MarkerCluster :options="clusterOptions">
         <Marker
