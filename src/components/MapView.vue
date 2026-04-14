@@ -252,7 +252,6 @@ const clusterOptions = {
 
     <GoogleMap
       ref="mapRef"
-      api-key="AIzaSyBFndI0-S8lHHyfTIzNApFxOLPfFDVBEAM"
       :center="mapCenter"
       :zoom="5"
       :options="mapOptions"

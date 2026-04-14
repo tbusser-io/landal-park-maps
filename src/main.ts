@@ -7,7 +7,7 @@ const app = createApp(App)
 
 app.use(VueGoogleMaps, {
   load: {
-    key: 'AIzaSyBFndI0-S8lHHyfTIzNApFxOLPfFDVBEAM',
+    key: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
   },
 })
 
