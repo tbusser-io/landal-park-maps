@@ -42,26 +42,28 @@ export function useMap(mapElementRef: Ref<HTMLElement | null>) {
   ) => {
     if (!map.value) return;
 
-    // Clear existing clusterer
+    // Remove old clusterer completely
     if (markerClusterer.value) {
       markerClusterer.value.clearMarkers();
       markerClusterer.value = null;
     }
 
-    // Clear ALL markers ever created
-    allMarkersEverCreated.forEach((m) => {
+    // Clear current markers from the map
+    markers.value.forEach((m) => {
       google.maps.event.clearInstanceListeners(m);
       m.setMap(null);
     });
 
+    // Clear the arrays
     markers.value = [];
+    allMarkersEverCreated.length = 0;
 
     // If no parks, just return after clearing
     if (parks.length === 0) {
       return;
     }
 
-    // Create new markers for filtered parks only
+    // Create new markers for filtered parks only (without adding to map yet)
     const newMarkers: google.maps.Marker[] = [];
     parks.forEach((park) => {
       const isVisited = visitedParkIds.includes(park.id);
@@ -69,30 +71,28 @@ export function useMap(mapElementRef: Ref<HTMLElement | null>) {
 
       const marker = new google.maps.Marker({
         position: park.coordinates,
-        map: map.value,
         icon: getMarkerIcon(isVisited, hasPromotion),
         title: park.name,
+        // Don't set map here - let clusterer handle it
       });
 
       marker.addListener('click', () => onMarkerClick(park));
 
-      // Track in BOTH arrays
       newMarkers.push(marker);
-      allMarkersEverCreated.push(marker);
     });
 
+    // Update our tracking arrays
     markers.value = newMarkers;
+    allMarkersEverCreated.push(...newMarkers);
 
-    // Create marker clusterer for better visualization
-    if (markers.value.length > 0) {
-      markerClusterer.value = new MarkerClusterer({
-        map: map.value,
-        markers: markers.value,
-      });
+    // Create new clusterer with all the new markers at once
+    markerClusterer.value = new MarkerClusterer({
+      map: map.value,
+      markers: newMarkers,
+    });
 
-      // Fit bounds to show all markers
-      fitBounds();
-    }
+    // Fit bounds to show all markers
+    fitBounds();
   };
 
   const fitBounds = () => {

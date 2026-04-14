@@ -12,7 +12,8 @@
   "dependencies": {
     "@googlemaps/markerclusterer": "^2.6.2",
     "@vueuse/core": "^14.2.1",
-    "vue": "^3.5.32"
+    "vue": "^3.5.32",
+    "vue3-google-map": "^0.27.1"
   },
   "devDependencies": {
     "@types/node": "^24.12.2",

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref, watch, onMounted } from 'vue';
-import { useMap } from '../composables/useMap';
+import { ref, watch } from 'vue';
+import { GoogleMap, Marker, MarkerCluster } from 'vue3-google-map';
 import { useParks } from '../composables/useParks';
 import { useAuth } from '../composables/useAuth';
 import type { Park } from '../types/Park';
@@ -11,36 +11,65 @@ const emit = defineEmits<{
   openFilters: [];
 }>();
 
-const mapElement = ref<HTMLElement | null>(null);
-const { map, initMap, updateMarkers } = useMap(mapElement);
 const { filteredParks, loading } = useParks();
 const { user } = useAuth();
 
-onMounted(() => {
-  // Wait for Google Maps to load
-  if (window.google) {
-    initMap();
-  } else {
-    console.error('Google Maps not loaded');
+const mapCenter = { lat: 51.0, lng: 10.0 }; // Center of Europe
+const mapRef = ref<InstanceType<typeof GoogleMap> | null>(null);
+
+// Watch for changes in filtered parks and adjust bounds
+watch(filteredParks, async (parks) => {
+  if (parks.length === 0 || !mapRef.value) return;
+
+  try {
+    // Wait for the map instance to be ready
+    const mapInstance = await mapRef.value.map;
+    if (!mapInstance) return;
+
+    // Small delay to ensure markers are rendered
+    setTimeout(() => {
+      const bounds = new google.maps.LatLngBounds();
+      parks.forEach((park) => {
+        bounds.extend(park.coordinates);
+      });
+      mapInstance.fitBounds(bounds);
+    }, 100);
+  } catch (error) {
+    console.error('Error fitting bounds:', error);
   }
 });
 
-// Watch for changes in filtered parks, map, and user state
-watch(
-  [filteredParks, () => user.value?.visitedParkIds, map, loading],
-  () => {
-    if (map.value && !loading.value && filteredParks.value.length > 0) {
-      const visitedIds = user.value?.visitedParkIds || [];
-      updateMarkers(filteredParks.value, visitedIds, (park) => {
-        emit('markerClick', park);
-      });
-    } else if (map.value && !loading.value && filteredParks.value.length === 0) {
-      // Clear markers if no parks match filters
-      updateMarkers([], [], () => {});
-    }
-  }
-);
+const getMarkerIcon = (park: Park) => {
+  const isVisited = user.value?.visitedParkIds.includes(park.id) || false;
+  const hasPromotion = park.promotion?.active || false;
+  const baseColor = isVisited ? '#10b981' : '#3b82f6'; // green : blue
+  const size = hasPromotion ? 40 : 32;
+
+  const badgeIcon = hasPromotion
+    ? `<circle cx="30" cy="10" r="8" fill="#f59e0b" stroke="white" stroke-width="1"/>
+       <text x="30" y="14" text-anchor="middle" font-size="10" fill="white" font-weight="bold">%</text>`
+    : '';
+
+  const svgIcon = `
+    <svg width="${size}" height="${size}" xmlns="http://www.w3.org/2000/svg">
+      <path d="M${size / 2} 5 C${size * 0.3} 5 5 ${size * 0.3} 5 ${size / 2} C5 ${size * 0.7} ${size / 2} ${size - 2} ${size / 2} ${size - 2} S${size - 5} ${size * 0.7} ${size - 5} ${size / 2} C${size - 5} ${size * 0.3} ${size * 0.7} 5 ${size / 2} 5 Z"
+            fill="${baseColor}" stroke="white" stroke-width="2"/>
+      ${badgeIcon}
+    </svg>
+  `;
+
+  return {
+    url: `data:image/svg+xml,${encodeURIComponent(svgIcon)}`,
+    scaledSize: { width: size, height: size },
+    anchor: { x: size / 2, y: size - 2 },
+  };
+};
+
+const handleMarkerClick = (park: Park) => {
+  emit('markerClick', park);
+};
 </script>
+
 
 <template>
   <div class="map-container">
@@ -49,7 +78,26 @@ watch(
       <span>Loading parks...</span>
     </div>
 
-    <div ref="mapElement" class="map-element"></div>
+    <GoogleMap
+      ref="mapRef"
+      api-key="AIzaSyBFndI0-S8lHHyfTIzNApFxOLPfFDVBEAM"
+      :center="mapCenter"
+      :zoom="5"
+      class="map-element"
+    >
+      <MarkerCluster>
+        <Marker
+          v-for="park in filteredParks"
+          :key="park.id"
+          :options="{
+            position: park.coordinates,
+            icon: getMarkerIcon(park),
+            title: park.name,
+          }"
+          @click="handleMarkerClick(park)"
+        />
+      </MarkerCluster>
+    </GoogleMap>
 
     <MarkerLegend />
 
