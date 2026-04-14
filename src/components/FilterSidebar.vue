@@ -4,6 +4,7 @@ import { useFilters } from '../composables/useFilters';
 import { useParks } from '../composables/useParks';
 import { useAuth } from '../composables/useAuth';
 import TriStateToggle from './TriStateToggle.vue';
+import TwoStateToggle from './TwoStateToggle.vue';
 
 const emit = defineEmits<{
   close: [];
@@ -115,33 +116,24 @@ const resultCount = computed(() => filteredParks.value.length);
       <div class="filter-section">
         <h3 class="filter-title">Special</h3>
         <div class="filter-options">
-          <label class="checkbox-label">
-            <input
-              type="checkbox"
-              :checked="filterState.showPromotionsOnly"
-              @change="toggleFilter('special', 'promotions')"
-            />
-            <span>Promotions Only</span>
-          </label>
+          <TwoStateToggle
+            label="Promotions Only"
+            :model-value="filterState.showPromotionsOnly"
+            @update:model-value="toggleFilter('special', 'promotions')"
+          />
 
           <template v-if="isAuthenticated">
-            <label class="checkbox-label">
-              <input
-                type="checkbox"
-                :checked="filterState.showVisitedOnly"
-                @change="toggleFilter('special', 'visited')"
-              />
-              <span>Visited Only</span>
-            </label>
+            <TwoStateToggle
+              label="Visited Only"
+              :model-value="filterState.showVisitedOnly"
+              @update:model-value="toggleFilter('special', 'visited')"
+            />
 
-            <label class="checkbox-label">
-              <input
-                type="checkbox"
-                :checked="filterState.showUnvisitedOnly"
-                @change="toggleFilter('special', 'unvisited')"
-              />
-              <span>Not Visited Only</span>
-            </label>
+            <TwoStateToggle
+              label="Not Visited Only"
+              :model-value="filterState.showUnvisitedOnly"
+              @update:model-value="toggleFilter('special', 'unvisited')"
+            />
           </template>
 
           <p v-else class="auth-hint">
