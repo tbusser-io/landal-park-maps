@@ -9,6 +9,7 @@ const filterState = reactive<FilterState>({
   showVisitedOnly: false,
   showUnvisitedOnly: false,
   showPromotionsOnly: false,
+  showFavoritesOnly: false,
 });
 
 /**
@@ -99,6 +100,15 @@ export function useFilters() {
       });
     }
 
+    if (filterState.showFavoritesOnly) {
+      chips.push({
+        label: 'Favorites',
+        key: 'special',
+        value: 'favorites',
+        filterValue: 'must'
+      });
+    }
+
     return chips;
   });
 
@@ -141,11 +151,11 @@ export function useFilters() {
   };
 
   /**
-   * Toggles a special boolean filter (visited, unvisited, promotions)
+   * Toggles a special boolean filter (visited, unvisited, promotions, favorites)
    * Note: visited and unvisited are mutually exclusive
    *
    * @param category - Must be 'special' for these filters
-   * @param value - One of: 'visited', 'unvisited', 'promotions'
+   * @param value - One of: 'visited', 'unvisited', 'promotions', 'favorites'
    */
   const toggleFilter = (category: string, value: string) => {
     if (category === 'special') {
@@ -161,6 +171,8 @@ export function useFilters() {
         if (filterState.showUnvisitedOnly) filterState.showVisitedOnly = false;
       } else if (value === 'promotions') {
         filterState.showPromotionsOnly = !filterState.showPromotionsOnly;
+      } else if (value === 'favorites') {
+        filterState.showFavoritesOnly = !filterState.showFavoritesOnly;
       }
     }
   };
@@ -175,6 +187,7 @@ export function useFilters() {
     filterState.showVisitedOnly = false;
     filterState.showUnvisitedOnly = false;
     filterState.showPromotionsOnly = false;
+    filterState.showFavoritesOnly = false;
   };
 
   /**
@@ -187,6 +200,7 @@ export function useFilters() {
       if (chip.value === 'visited') filterState.showVisitedOnly = false;
       if (chip.value === 'unvisited') filterState.showUnvisitedOnly = false;
       if (chip.value === 'promotions') filterState.showPromotionsOnly = false;
+      if (chip.value === 'favorites') filterState.showFavoritesOnly = false;
     } else {
       const category = chip.key as 'countries' | 'features' | 'locations';
       delete filterState[category][chip.value];

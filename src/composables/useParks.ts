@@ -94,11 +94,15 @@ export function useParks() {
       }
 
       // 4. Visited filter
-      const isVisited = user.value?.visitedParkIds.includes(park.id) || false;
+      const isVisited = user.value?.visitedParkIds?.includes(park.id) || false;
       if (filterState.showVisitedOnly && !isVisited) return false;
       if (filterState.showUnvisitedOnly && isVisited) return false;
 
-      // 5. Promotion filter
+      // 5. Favorites filter
+      const isFavorite = user.value?.favoriteParkIds?.includes(park.id) || false;
+      if (filterState.showFavoritesOnly && !isFavorite) return false;
+
+      // 6. Promotion filter
       if (filterState.showPromotionsOnly && !park.promotion?.active) return false;
 
       return true; // Park passes all filters

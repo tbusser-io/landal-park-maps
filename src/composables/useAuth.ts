@@ -13,11 +13,13 @@ const MOCK_USERS: User[] = [
     email: 'demo@landal.com',
     name: 'Demo User',
     visitedParkIds: ['ABG', 'AHT', 'AND', 'BDM', 'COG', 'HDG', 'TXL', 'ONE', 'VDN', 'KWT', 'SLI', 'VDM'],
+    favoriteParkIds: ['WBG', 'TWN', 'STN', 'DWL', 'KMP'],
   },
   {
     email: 'test@landal.com',
     name: 'Test User',
     visitedParkIds: ['WBG', 'MYL', 'SBG', 'CHM', 'HWD', 'DTR', 'WRG', 'BBG'],
+    favoriteParkIds: ['ABG', 'VDN', 'SLI'],
   },
 ];
 
@@ -89,5 +91,41 @@ export function useAuth() {
     localStorage.removeItem(STORAGE_KEY);
   };
 
-  return { user, isAuthenticated, login, logout };
+  /**
+   * Toggles a park's favorite status for the current user
+   *
+   * @param parkId - The park ID to toggle
+   */
+  const toggleFavorite = (parkId: string) => {
+    if (!user.value) return;
+
+    // Initialize favoriteParkIds if it doesn't exist
+    if (!user.value.favoriteParkIds) {
+      user.value.favoriteParkIds = [];
+    }
+
+    const index = user.value.favoriteParkIds.indexOf(parkId);
+    if (index > -1) {
+      // Remove from favorites
+      user.value.favoriteParkIds.splice(index, 1);
+    } else {
+      // Add to favorites
+      user.value.favoriteParkIds.push(parkId);
+    }
+
+    // Persist to localStorage
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(user.value));
+  };
+
+  /**
+   * Checks if a park is in the user's favorites
+   *
+   * @param parkId - The park ID to check
+   * @returns True if the park is favorited, false otherwise
+   */
+  const isFavorite = (parkId: string): boolean => {
+    return user.value?.favoriteParkIds?.includes(parkId) || false;
+  };
+
+  return { user, isAuthenticated, login, logout, toggleFavorite, isFavorite };
 }

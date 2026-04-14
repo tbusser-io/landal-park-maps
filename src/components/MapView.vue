@@ -100,8 +100,28 @@ const fitMapBounds = async (parks: Park[]) => {
 };
 
 // Watch for changes in filtered parks and adjust bounds
-watch(filteredParks, (parks) => {
-  fitMapBounds(parks);
+// Only fit bounds when the actual set of parks changes, not when properties like favorite status change
+watch(filteredParks, (parks, oldParks) => {
+  // On initial load, always fit bounds
+  if (!oldParks) {
+    fitMapBounds(parks);
+    return;
+  }
+
+  // Check if the park IDs have changed (different parks or different count)
+  if (parks.length !== oldParks.length) {
+    fitMapBounds(parks);
+    return;
+  }
+
+  // Check if the set of park IDs is different
+  const parkIds = new Set(parks.map(p => p.id));
+  const oldParkIds = new Set(oldParks.map(p => p.id));
+
+  if (parkIds.size !== oldParkIds.size ||
+      [...parkIds].some(id => !oldParkIds.has(id))) {
+    fitMapBounds(parks);
+  }
 }, { immediate: true });
 
 // Watch for changes in selected park to center map on the marker
@@ -146,7 +166,8 @@ onMounted(async () => {
 });
 
 const getMarkerIcon = (park: Park) => {
-  const isVisited = user.value?.visitedParkIds.includes(park.id) || false;
+  const isVisited = user.value?.visitedParkIds?.includes(park.id) || false;
+  const isFavorited = user.value?.favoriteParkIds?.includes(park.id) || false;
   const hasPromotion = park.promotion?.active || false;
   const isSelected = props.selectedPark?.id === park.id;
 
@@ -177,6 +198,11 @@ const getMarkerIcon = (park: Park) => {
        <text x="44" y="16.5" text-anchor="middle" font-size="11" fill="white" font-weight="bold">%</text>`
     : '';
 
+  const favoriteBadge = isFavorited
+    ? `<circle cx="8" cy="12" r="9" fill="#f59e0b" stroke="white" stroke-width="2"/>
+       <text x="8" y="17" text-anchor="middle" font-size="12" fill="white" font-weight="bold">★</text>`
+    : '';
+
   const svgIcon = `
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${size}px" height="${size * 1.23}px" viewBox="0 0 52 64" version="1.1">
       <defs>
@@ -199,6 +225,7 @@ const getMarkerIcon = (park: Park) => {
             <path d="M20.790184,15.9424585 L19.1595204,17.334369 C18.9678948,18.0153837 18.5168531,18.5921614 17.908081,18.9243298 C17.887274,20.355503 16.7563137,21.5135753 15.368622,21.5135753 C15.3337199,21.5135753 15.2988179,21.5128804 15.2642515,21.5114906 L15.2642515,27.7777778 L19.4572193,27.7777778 L19.4572193,23.1454141 L22.2005348,23.1454141 L22.2005348,27.7777778 L26.0167644,27.7777778 C26.1936238,27.7777778 26.3466558,27.7103712 26.4758605,27.5769479 C26.6054008,27.4431772 26.6701709,27.2843896 26.6701709,27.10128 C26.6677099,23.0110827 26.664242,20.961467 26.6597674,20.9524332 L20.790184,15.9424585 Z" fill="${symbolColor}"/>
           </g>
         </g>
+        ${favoriteBadge}
         ${promotionBadge}
       </g>
     </svg>

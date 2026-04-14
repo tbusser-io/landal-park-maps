@@ -36,6 +36,7 @@ export type User = {
   email: string;
   name: string;
   visitedParkIds: string[];
+  favoriteParkIds: string[];
 };
 
 export type FilterValue = 'exclude' | 'any' | 'must';
@@ -47,6 +48,7 @@ export type FilterState = {
   showVisitedOnly: boolean;
   showUnvisitedOnly: boolean;
   showPromotionsOnly: boolean;
+  showFavoritesOnly: boolean;
 };
 
 export type FilterChip = {

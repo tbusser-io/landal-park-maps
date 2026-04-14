@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Park } from '../types/Park';
 import { useAuth } from '../composables/useAuth';
+import { computed } from 'vue';
 
 const props = defineProps<{
   park: Park;
@@ -10,10 +11,16 @@ const emit = defineEmits<{
   close: [];
 }>();
 
-const { user } = useAuth();
+const { user, isAuthenticated, toggleFavorite, isFavorite } = useAuth();
 
 const isVisited = () => {
-  return user.value?.visitedParkIds.includes(props.park.id) || false;
+  return user.value?.visitedParkIds?.includes(props.park.id) || false;
+};
+
+const isFavorited = computed(() => isFavorite(props.park.id));
+
+const handleToggleFavorite = () => {
+  toggleFavorite(props.park.id);
 };
 
 const getFeatureLabel = (key: string): string => {
@@ -73,7 +80,19 @@ const activeLocations = () => {
       </div>
 
       <div class="park-info">
-        <h2 class="park-name">{{ park.name }}</h2>
+        <div class="park-header">
+          <h2 class="park-name">{{ park.name }}</h2>
+
+          <button
+            v-if="isAuthenticated"
+            class="favorite-button"
+            :class="{ 'is-favorite': isFavorited }"
+            @click="handleToggleFavorite"
+            :aria-label="isFavorited ? 'Remove from favorites' : 'Add to favorites'"
+          >
+            <span class="favorite-icon">{{ isFavorited ? '★' : '☆' }}</span>
+          </button>
+        </div>
 
         <div class="park-location">
           <span class="location-icon">📍</span>
@@ -199,11 +218,56 @@ const activeLocations = () => {
   padding: 24px;
 }
 
+.park-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
 .park-name {
-  margin: 0 0 12px 0;
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   color: #1f2937;
+  flex: 1;
+}
+
+.favorite-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.favorite-button:hover {
+  transform: scale(1.2);
+}
+
+.favorite-button:focus {
+  outline: 2px solid var(--brand-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.favorite-icon {
+  font-size: 28px;
+  color: #d1d5db;
+  transition: color 0.2s;
+}
+
+.favorite-button.is-favorite .favorite-icon {
+  color: #f59e0b;
+}
+
+.favorite-button:hover .favorite-icon {
+  color: #f59e0b;
 }
 
 .park-location {

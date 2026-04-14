@@ -34,6 +34,11 @@ const toggleLegend = () => {
       </div>
 
       <div class="legend-item">
+        <div class="marker-icon blue favorite"></div>
+        <span>Favorite</span>
+      </div>
+
+      <div class="legend-item">
         <div class="marker-icon blue promotion"></div>
         <span>Promotion</span>
       </div>
@@ -122,6 +127,25 @@ const toggleLegend = () => {
 
 .marker-icon.green {
   background: #10b981;
+}
+
+.marker-icon.favorite::before {
+  content: '★';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 16px;
+  height: 16px;
+  background: #f59e0b;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  transform: rotate(45deg);
 }
 
 .marker-icon.promotion::after {

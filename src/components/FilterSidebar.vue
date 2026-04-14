@@ -134,6 +134,12 @@ const resultCount = computed(() => filteredParks.value.length);
 
           <template v-if="isAuthenticated">
             <TwoStateToggle
+              label="Favorites Only"
+              :model-value="filterState.showFavoritesOnly"
+              @update:model-value="toggleFilter('special', 'favorites')"
+            />
+
+            <TwoStateToggle
               label="Visited Only"
               :model-value="filterState.showVisitedOnly"
               @update:model-value="toggleFilter('special', 'visited')"
@@ -147,7 +153,7 @@ const resultCount = computed(() => filteredParks.value.length);
           </template>
 
           <p v-else class="auth-hint">
-            Login to filter by visited parks
+            Login to filter by favorites and visited parks
           </p>
         </div>
       </div>
