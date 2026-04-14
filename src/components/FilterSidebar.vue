@@ -58,13 +58,14 @@ const normalizeText = (text: string): string => {
 };
 
 // Compute park suggestions based on search input
+// Scoped to parks visible on the map (based on current filters)
 const suggestions = computed(() => {
   if (!searchInput.value || searchInput.value.length < 2) {
     return [];
   }
 
   const query = normalizeText(searchInput.value);
-  return allParks.value
+  return filteredParks.value
     .filter(park => {
       const searchableText = normalizeText([
         park.name,
