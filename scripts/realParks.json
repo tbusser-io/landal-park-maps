@@ -1,0 +1,3394 @@
+{
+  "markers": [
+      {
+          "parkCode": "ABG",
+          "title": "Vakantiepark Amerongse Berg",
+          "position": {
+              "lat": 52.031576,
+              "lng": 5.518601
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ABG",
+              "brand": "LGP",
+              "parkName": "Amerongse Berg",
+              "region": "Utrecht"
+          }
+      },
+      {
+          "parkCode": "ABR",
+          "title": "Vakantiepark Arber",
+          "position": {
+              "lat": 49.0244579,
+              "lng": 13.2190086
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "ABR",
+              "brand": "LGP",
+              "parkName": "Arber",
+              "region": "Beierse_Woud"
+          }
+      },
+      {
+          "parkCode": "ACK",
+          "title": "Angrove",
+          "position": {
+              "lat": 54.4794828404785,
+              "lng": -1.1525347958154
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "ACK",
+              "brand": "LGP",
+              "parkName": "Angrove",
+              "region": "Yorkshire"
+          }
+      },
+      {
+          "parkCode": "ADE",
+          "title": "Alpine Lodge Lenzerheide",
+          "position": {
+              "lat": 46.7375048,
+              "lng": 9.5566038
+          },
+          "measurementPark": {
+              "country": "CH",
+              "code": "ADE",
+              "brand": "LGP",
+              "parkName": "Alpine Lodge Lenzerheide",
+              "region": "Graubunden"
+          }
+      },
+      {
+          "parkCode": "AGS",
+          "title": "Aysgarth",
+          "position": {
+              "lat": 54.28874,
+              "lng": -1.97601
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "AGS",
+              "brand": "LGP",
+              "parkName": "Aysgarth",
+              "region": "Yorkshire"
+          }
+      },
+      {
+          "parkCode": "AHT",
+          "title": "Vakantiepark Aelderholt",
+          "position": {
+              "lat": 52.797322,
+              "lng": 6.705132
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "AHT",
+              "brand": "LGP",
+              "parkName": "Aelderholt",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "AKL",
+          "title": "Vakantiepark Landgoed Aerwinkel",
+          "position": {
+              "lat": 51.119391,
+              "lng": 6.015346
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "AKL",
+              "brand": "LGP",
+              "parkName": "Landgoed Aerwinkel",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "AND",
+          "title": "Vakantiepark Ameland",
+          "position": {
+              "lat": 53.4489361,
+              "lng": 5.6321538
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "AND",
+              "brand": "LGP",
+              "parkName": "Ameland",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "ANN",
+          "title": "Waterpark De Alde Feanen",
+          "position": {
+              "lat": 53.09698,
+              "lng": 5.94657
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ANN",
+              "brand": "LGP",
+              "parkName": "Waterpark De Alde Feanen",
+              "region": "Friesland"
+          }
+      },
+      {
+          "parkCode": "ATE",
+          "title": "Strandappartementen Ameland State",
+          "position": {
+              "lat": 53.457112,
+              "lng": 5.777435
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ATE",
+              "brand": "LGP",
+              "parkName": "Ameland State",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "AWT",
+          "title": "Alps Resorts Alpendorf Dachstein West",
+          "position": {
+              "lat": 47.5151,
+              "lng": 13.44985
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "AWT",
+              "brand": "LGP",
+              "parkName": "Alpendorf Dachstein West",
+              "region": "Salzburgerland"
+          }
+      },
+      {
+          "parkCode": "BBG",
+          "title": "Vakantiepark Bergresort Winterberg",
+          "position": {
+              "lat": 51.201572,
+              "lng": 8.536196
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "BBG",
+              "brand": "LGP",
+              "parkName": "Bergresort Winterberg",
+              "region": "Sauerland"
+          }
+      },
+      {
+          "parkCode": "BBK",
+          "title": "Alps Resorts Bergresort Tauernblick",
+          "position": {
+              "lat": 47.30004,
+              "lng": 12.4144677
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "BBK",
+              "brand": "LGP",
+              "parkName": "Bergresort Tauernblick",
+              "region": "Salzburgerland"
+          }
+      },
+      {
+          "parkCode": "BBM",
+          "title": "Vakantiepark Ferienresort Bad Bentheim",
+          "position": {
+              "lat": 52.3010149,
+              "lng": 7.1376898
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "BBM",
+              "brand": "LGP",
+              "parkName": "Ferienresort Bad Bentheim",
+              "region": "Lower_Saxony"
+          }
+      },
+      {
+          "parkCode": "BDE",
+          "title": "Vakantiepark Waterpark Belterwiede",
+          "position": {
+              "lat": 52.695479,
+              "lng": 6.097526
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BDE",
+              "brand": "LGP",
+              "parkName": "Waterpark Belterwiede",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "BDM",
+          "title": "Beach Resort Brouwersdam",
+          "position": {
+              "lat": 51.7304345,
+              "lng": 3.841665
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BDM",
+              "brand": "LGP",
+              "parkName": "Beach Resort Brouwersdam",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "BDN",
+          "title": "Vakantiepark Bos en Duin",
+          "position": {
+              "lat": 51.57776,
+              "lng": 3.546615
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BDN",
+              "brand": "LGP",
+              "parkName": "Bos en Duin",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "BDS",
+          "title": "Belton View",
+          "position": {
+              "lat": 52.9440735300979,
+              "lng": -0.629646975120366
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "BDS",
+              "brand": "LGP",
+              "parkName": "Belton View",
+              "region": "Lincolnshire"
+          }
+      },
+      {
+          "parkCode": "BGE",
+          "title": "Park Breeduyn Village",
+          "position": {
+              "lat": 51.252033,
+              "lng": 2.975387
+          },
+          "measurementPark": {
+              "country": "BE",
+              "code": "BGE",
+              "brand": "LGP",
+              "parkName": "Breeduyn Village",
+              "region": "West_Flanders"
+          }
+      },
+      {
+          "parkCode": "BHM",
+          "title": "Alpen Chalets Bad Kleinkirchheim",
+          "position": {
+              "lat": 46.810873,
+              "lng": 13.78148
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "BHM",
+              "brand": "LGP",
+              "parkName": "Bad Kleinkirchheim",
+              "region": "Carinthia"
+          }
+      },
+      {
+          "parkCode": "BKE",
+          "title": "Vakantiepark Boomhiemke",
+          "position": {
+              "lat": 53.450493619234,
+              "lng": 5.6375527381897
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BKE",
+              "brand": "LGP",
+              "parkName": "Vakantiepark Boomhiemke",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "BKL",
+          "title": "Waterresort Blocksyl",
+          "position": {
+              "lat": 52.729599,
+              "lng": 5.972272
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BKL",
+              "brand": "LGP",
+              "parkName": "Waterresort Blocksyl",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "BLE",
+          "title": "Vakantiepark Lakeside Resort Brielle",
+          "position": {
+              "lat": 51.8952,
+              "lng": 4.20844
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BLE",
+              "brand": "LGP",
+              "parkName": "Lakeside Resort Brielle",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "BMT",
+          "title": "Waterpark De Bloemert",
+          "position": {
+              "lat": 53.115666,
+              "lng": 6.680374
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BMT",
+              "brand": "LGP",
+              "parkName": "Waterpark De Bloemert",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "BNN",
+          "title": "Vakantievilla's Berger Duinen",
+          "position": {
+              "lat": 52.6925646,
+              "lng": 4.7095071
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BNN",
+              "brand": "LGP",
+              "parkName": "Berger Duinen",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "BRD",
+          "title": "Noordzee Résidence De Banjaard",
+          "position": {
+              "lat": 51.591997,
+              "lng": 3.673366
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BRD",
+              "brand": "LGP",
+              "parkName": "Noordzee Résidence De Banjaard",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "BRG",
+          "title": "Vakantiepark Buitenhof Domburg",
+          "position": {
+              "lat": 51.5559,
+              "lng": 3.49037
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BRG",
+              "brand": "LGP",
+              "parkName": "Buitenhof Domburg",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "BRN",
+          "title": "Vakantiepark Buytenplaets Rhenen",
+          "position": {
+              "lat": 51.9760357747627,
+              "lng": 5.56365404921896
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BRN",
+              "brand": "LGP",
+              "parkName": "Buytenplaets Rhenen",
+              "region": "Utrecht"
+          }
+      },
+      {
+          "parkCode": "BSL",
+          "title": "Vakantiepark Barnsoul",
+          "position": {
+              "lat": 55.078153,
+              "lng": -3.763595
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "BSL",
+              "brand": "LGP",
+              "parkName": "Barnsoul",
+              "region": "Dumfries_and_Galloway"
+          }
+      },
+      {
+          "parkCode": "BTL",
+          "title": "Alpen Chalets Brandnertal",
+          "position": {
+              "lat": 47.14629,
+              "lng": 9.76138
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "BTL",
+              "brand": "LGP",
+              "parkName": "Brandnertal",
+              "region": "Vorarlberg"
+          }
+      },
+      {
+          "parkCode": "BTN",
+          "title": "Vakantiepark Brunston",
+          "position": {
+              "lat": 55.27789,
+              "lng": -4.73858
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "BTN",
+              "brand": "LGP",
+              "parkName": "Brunston",
+              "region": "Dumfries_and_Galloway"
+          }
+      },
+      {
+          "parkCode": "BTT",
+          "title": "Bude Coastal Resort",
+          "position": {
+              "lat": 50.83375,
+              "lng": -4.52913
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "BTT",
+              "brand": "LGP",
+              "parkName": "Bude Coastal Resort",
+              "region": "Cornwall"
+          }
+      },
+      {
+          "parkCode": "BWD",
+          "title": "Alps Resorts Bergresort Zugspitze Ehrwald",
+          "position": {
+              "lat": 47.3966398,
+              "lng": 10.9171117
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "BWD",
+              "brand": "LGP",
+              "parkName": "Bergresort Zugspitze Ehrwald",
+              "region": "Tirol"
+          }
+      },
+      {
+          "parkCode": "BXL",
+          "title": "Beach Park Texel",
+          "position": {
+              "lat": 53.099667,
+              "lng": 4.768023
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BXL",
+              "brand": "LGP",
+              "parkName": "Beach Park Texel",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "BYN",
+          "title": "Resort Brinckerduyn",
+          "position": {
+              "lat": 52.938305,
+              "lng": 6.341837
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BYN",
+              "brand": "LGP",
+              "parkName": "Brinckerduyn",
+              "region": "Friesland"
+          }
+      },
+      {
+          "parkCode": "BZE",
+          "title": "Vakantiepark Bloemendaal aan Zee",
+          "position": {
+              "lat": 52.4009649,
+              "lng": 4.5446026
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BZE",
+              "brand": "LGP",
+              "parkName": "Bloemendaal aan Zee",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "BZN",
+          "title": "Alps Resorts Bergresort Gerlitzen",
+          "position": {
+              "lat": 46.6760116,
+              "lng": 13.8948729
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "BZN",
+              "brand": "LGP",
+              "parkName": "Bergresort Gerlitzen",
+              "region": "Carinthia"
+          }
+      },
+      {
+          "parkCode": "CBD",
+          "title": "Noordzee Résidence Cadzand-Bad",
+          "position": {
+              "lat": 51.375690485927,
+              "lng": 3.39366175366121
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "CBD",
+              "brand": "LGP",
+              "parkName": "Noordzee Résidence Cadzand-Bad",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "CBG",
+          "title": "Kasteeldomein De Cauberg",
+          "position": {
+              "lat": 50.857685,
+              "lng": 5.821906
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "CBG",
+              "brand": "LGP",
+              "parkName": "Kasteeldomein De Cauberg",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "CCE",
+          "title": "Vakantiepark Clowance",
+          "position": {
+              "lat": 50.16779,
+              "lng": -5.31549
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "CCE",
+              "brand": "LGP",
+              "parkName": "Clowance",
+              "region": "Cornwall"
+          }
+      },
+      {
+          "parkCode": "CDE",
+          "title": "Vakantiepark Callassande",
+          "position": {
+              "lat": 52.8563306136,
+              "lng": 4.71693277359
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "CDE",
+              "brand": "LGP",
+              "parkName": "Vakantiepark Callassande",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "CHM",
+          "title": "Ferienresort Cochem",
+          "position": {
+              "lat": 50.1189812366465,
+              "lng": 7.1671980794149
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "CHM",
+              "brand": "LGP",
+              "parkName": "Ferienresort Cochem",
+              "region": "Moselle"
+          }
+      },
+      {
+          "parkCode": "CLN",
+          "title": "Alpen Residences Clofers Sonnleitn",
+          "position": {
+              "lat": 46.58487,
+              "lng": 13.25754
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "CLN",
+              "brand": "LGP",
+              "parkName": "Clofers Sonnleitn",
+              "region": "Carinthia"
+          }
+      },
+      {
+          "parkCode": "CNG",
+          "title": "Alpen Residences Clofers Jenig",
+          "position": {
+              "lat": 46.62786,
+              "lng": 13.252641
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "CNG",
+              "brand": "LGP",
+              "parkName": "Clofers Jenig",
+              "region": "Carinthia"
+          }
+      },
+      {
+          "parkCode": "COG",
+          "title": "Vakantiepark Callantsoog",
+          "position": {
+              "lat": 52.8436451,
+              "lng": 4.696454
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "COG",
+              "brand": "LGP",
+              "parkName": "Callantsoog",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "CRF",
+          "title": "Alpen Residences Clofers Rattendorf",
+          "position": {
+              "lat": 46.622234,
+              "lng": 13.255859
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "CRF",
+              "brand": "LGP",
+              "parkName": "Clofers Rattendorf",
+              "region": "Carinthia"
+          }
+      },
+      {
+          "parkCode": "CRS",
+          "title": "Alps Resorts Carpe Solem Rauris",
+          "position": {
+              "lat": 47.2234810942826,
+              "lng": 12.9914325657886
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "CRS",
+              "brand": "LGP",
+              "parkName": "Carpe Solem Rauris",
+              "region": "Salzburgerland"
+          }
+      },
+      {
+          "parkCode": "CSH",
+          "title": "Alpen Residences Clofers Obermöschach",
+          "position": {
+              "lat": 46.63626,
+              "lng": 13.34804
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "CSH",
+              "brand": "LGP",
+              "parkName": "Clofers Obermöschach",
+              "region": "Carinthia"
+          }
+      },
+      {
+          "parkCode": "CTN",
+          "title": "Alpen Chalet Matin",
+          "position": {
+              "lat": 47.146257,
+              "lng": 9.776926
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "CTN",
+              "brand": "LGP",
+              "parkName": "Chalet Matin",
+              "region": "Vorarlberg"
+          }
+      },
+      {
+          "parkCode": "CUS",
+          "title": "Vakantiepark Cape Helius",
+          "position": {
+              "lat": 51.822074,
+              "lng": 4.124712
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "CUS",
+              "brand": "LGP",
+              "parkName": "Cape Helius",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "CVE",
+          "title": "Vakantiepark Coldenhove",
+          "position": {
+              "lat": 52.092415,
+              "lng": 6.033829
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "CVE",
+              "brand": "LGP",
+              "parkName": "Coldenhove",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "DBT",
+          "title": "Vakantiepark Duc de Brabant",
+          "position": {
+              "lat": 51.450763,
+              "lng": 5.200851
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DBT",
+              "brand": "LGP",
+              "parkName": "Duc de Brabant",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "DCE",
+          "title": "Vakantiepark Noordzee Résidence Dishoek",
+          "position": {
+              "lat": 51.4706832209514,
+              "lng": 3.5215243903498
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DCE",
+              "brand": "LGP",
+              "parkName": "Noordzee Résidence Dishoek",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "DHK",
+          "title": "Vakantiepark Camping Dishoek",
+          "position": {
+              "lat": 51.468139,
+              "lng": 3.523823
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DHK",
+              "brand": "LGP",
+              "parkName": "Camping Dishoek",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "DHL",
+          "title": "Alps Resorts Dorfresort Kitzbühel",
+          "position": {
+              "lat": 47.47663,
+              "lng": 12.34297
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "DHL",
+              "brand": "LGP",
+              "parkName": "Dorfresort Kitzbühel",
+              "region": "Tirol"
+          }
+      },
+      {
+          "parkCode": "DLE",
+          "title": "Vakantiepark Strandpark Duynhille",
+          "position": {
+              "lat": 51.823788,
+              "lng": 3.928779
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DLE",
+              "brand": "LGP",
+              "parkName": "Strandpark Duynhille",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "DLI",
+          "title": "Vakantiepark Duynvallei",
+          "position": {
+              "lat": 52.72517,
+              "lng": 4.6564
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DLI",
+              "brand": "LGP",
+              "parkName": "Duynvallei",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "DNE",
+          "title": "Vakantiepark Drentse Lagune",
+          "position": {
+              "lat": 52.86908,
+              "lng": 6.61688
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DNE",
+              "brand": "LGP",
+              "parkName": "Drentse Lagune",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "DPL",
+          "title": "Vakantiepark Park De Peel",
+          "position": {
+              "lat": 51.4551069,
+              "lng": 5.7521652
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DPL",
+              "brand": "LGP",
+              "parkName": "Park De Peel",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "DRK",
+          "title": "Resort De Weelderik",
+          "position": {
+              "lat": 52.05933,
+              "lng": 6.35899
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DRK",
+              "brand": "LGP",
+              "parkName": "De Weelderik",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "DSD",
+          "title": "Vakantiepark Dwergter Sand",
+          "position": {
+              "lat": 52.885214,
+              "lng": 7.918804
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "DSD",
+              "brand": "LGP",
+              "parkName": "Dwergter Sand",
+              "region": "Oldenburger_Munsterland"
+          }
+      },
+      {
+          "parkCode": "DST",
+          "title": "Dylan Coastal Resort",
+          "position": {
+              "lat": 51.773762,
+              "lng": -4.455506
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "DST",
+              "brand": "LGP",
+              "parkName": "Dylan Coastal Resort",
+              "region": "South_Wales"
+          }
+      },
+      {
+          "parkCode": "DTB",
+          "title": "Vakantiepark De Thijmse Berg",
+          "position": {
+              "lat": 51.9760357747627,
+              "lng": 5.56365404921896
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DTB",
+              "brand": "LGP",
+              "parkName": "De Thijmse Berg",
+              "region": "Utrecht"
+          }
+      },
+      {
+          "parkCode": "DTN",
+          "title": "Vakantiepark De Heihorsten",
+          "position": {
+              "lat": 51.3827868,
+              "lng": 5.6565129
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DTN",
+              "brand": "LGP",
+              "parkName": "De Heihorsten",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "DTR",
+          "title": "Dormio Resort Eifeler Tor",
+          "position": {
+              "lat": 50.6324,
+              "lng": 6.445
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "DTR",
+              "brand": "LGP",
+              "parkName": "Dormio Resort Eifeler Tor",
+              "region": "Eifel"
+          }
+      },
+      {
+          "parkCode": "EHT",
+          "title": "Waterpark Elfstedenhart",
+          "position": {
+              "lat": 53.099868,
+              "lng": 5.4757118
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "EHT",
+              "brand": "LGP",
+              "parkName": "Elfstedenhart",
+              "region": "Friesland"
+          }
+      },
+      {
+          "parkCode": "END",
+          "title": "Vakantiepark ECO Grevelingenstrand",
+          "position": {
+              "lat": 51.7540456,
+              "lng": 3.8560602
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "END",
+              "brand": "LGP",
+              "parkName": "ECO Grevelingenstrand",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "ESD",
+          "title": "Waterpark Esonstad",
+          "position": {
+              "lat": 53.375542,
+              "lng": 6.1592547
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ESD",
+              "brand": "LGP",
+              "parkName": "Esonstad",
+              "region": "Friesland"
+          }
+      },
+      {
+          "parkCode": "ESL",
+          "title": "Park Eksel",
+          "position": {
+              "lat": 51.147548,
+              "lng": 5.3958508
+          },
+          "measurementPark": {
+              "country": "BE",
+              "code": "ESL",
+              "brand": "LGP",
+              "parkName": "Park Eksel",
+              "region": "Belgisch_Limburg"
+          }
+      },
+      {
+          "parkCode": "ETT",
+          "title": "Beach Park Ebeltoft",
+          "position": {
+              "lat": 56.152193,
+              "lng": 10.692837
+          },
+          "measurementPark": {
+              "country": "DK",
+              "code": "ETT",
+              "brand": "LGP",
+              "parkName": "Ebeltoft",
+              "region": "Jutland"
+          }
+      },
+      {
+          "parkCode": "EVN",
+          "title": "Vakantiepark Landgoed De Elsgraven",
+          "position": {
+              "lat": 52.309686,
+              "lng": 6.565124
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "EVN",
+              "brand": "LGP",
+              "parkName": "Landgoed De Elsgraven",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "FKT",
+          "title": "Strandappartementen Fyrklit",
+          "position": {
+              "lat": 57.580723,
+              "lng": 9.937962
+          },
+          "measurementPark": {
+              "country": "DK",
+              "code": "FKT",
+              "brand": "LGP",
+              "parkName": "Fyrklit",
+              "region": "Nordjylland"
+          }
+      },
+      {
+          "parkCode": "GMR",
+          "title": "Beach Park Gwel an Mor",
+          "position": {
+              "lat": 50.255507,
+              "lng": -5.287893
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "GMR",
+              "brand": "LGP",
+              "parkName": "Gwel an Mor",
+              "region": "Cornwall"
+          }
+      },
+      {
+          "parkCode": "GPN",
+          "title": "Vakantiepark Gulpen",
+          "position": {
+              "lat": 50.80336,
+              "lng": 5.86467
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "GPN",
+              "brand": "LGP",
+              "parkName": "Gulpen",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "GSD",
+          "title": "Beach Park Grønhøj Strand",
+          "position": {
+              "lat": 57.331378,
+              "lng": 9.679057
+          },
+          "measurementPark": {
+              "country": "DK",
+              "code": "GSD",
+              "brand": "LGP",
+              "parkName": "Grønhøj Strand",
+              "region": "Jutland"
+          }
+      },
+      {
+          "parkCode": "GVR",
+          "title": "Hillview Resort Grandvoir",
+          "position": {
+              "lat": 49.8705390624763,
+              "lng": 5.39744730247397
+          },
+          "measurementPark": {
+              "country": "BE",
+              "code": "GVR",
+              "brand": "LGP",
+              "parkName": "Hillview Resort Grandvoir",
+              "region": "Wallonie"
+          }
+      },
+      {
+          "parkCode": "HBG",
+          "title": "Vakantiepark Landgoed De Hellendoornse Berg",
+          "position": {
+              "lat": 52.374797,
+              "lng": 6.406067
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HBG",
+              "brand": "LGP",
+              "parkName": "Landgoed De Hellendoornse Berg",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "HDE",
+          "title": "Duinpark 't Hof van Haamstede",
+          "position": {
+              "lat": 51.685435,
+              "lng": 3.724644
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HDE",
+              "brand": "LGP",
+              "parkName": "Duinpark 't Hof van Haamstede",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "HDG",
+          "title": "Vakantiepark Hof Domburg",
+          "position": {
+              "lat": 51.560384,
+              "lng": 3.489337
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HDG",
+              "brand": "LGP",
+              "parkName": "Hof Domburg",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "HDL",
+          "title": "Vakantiepark Hunzedal",
+          "position": {
+              "lat": 52.9235385579525,
+              "lng": 6.81535329086454
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HDL",
+              "brand": "LGP",
+              "parkName": "Vakantiepark Hunzedal",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "HFN",
+          "title": "Alpen Chalets Hochmontafon",
+          "position": {
+              "lat": 46.966951,
+              "lng": 9.915848
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "HFN",
+              "brand": "LGP",
+              "parkName": "Hochmontafon",
+              "region": "Vorarlberg"
+          }
+      },
+      {
+          "parkCode": "HHS",
+          "title": "Vakantiepark Heihaas",
+          "position": {
+              "lat": 52.246127,
+              "lng": 5.609491
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HHS",
+              "brand": "LGP",
+              "parkName": "Heihaas",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "HLO",
+          "title": "Vakantiepark Bungalowpark Hoenderloo",
+          "position": {
+              "lat": 52.1205686980778,
+              "lng": 5.91090937074737
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HLO",
+              "brand": "LGP",
+              "parkName": "Bungalowpark Hoenderloo",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "HMR",
+          "title": "Hansa Park Resort am Meer",
+          "position": {
+              "lat": 54.0737,
+              "lng": 10.78226
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "HMR",
+              "brand": "LGP",
+              "parkName": "Hansa Park Resort am Meer",
+              "region": "Schleswig_Holstein"
+          }
+      },
+      {
+          "parkCode": "HRG",
+          "title": "Hafendorf Rheinsberg",
+          "position": {
+              "lat": 53.06516,
+              "lng": 12.53225
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "HRG",
+              "brand": "LGP",
+              "parkName": "Hafendorf Rheinsberg",
+              "region": "Brandenburg"
+          }
+      },
+      {
+          "parkCode": "HRK",
+          "title": "Vakantiepark Hunzepark",
+          "position": {
+              "lat": 52.981594,
+              "lng": 6.835105
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HRK",
+              "brand": "LGP",
+              "parkName": "Hunzepark",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "HSE",
+          "title": "Vakantiepark Hunerwold State",
+          "position": {
+              "lat": 52.921163,
+              "lng": 6.266014
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HSE",
+              "brand": "LGP",
+              "parkName": "Hunerwold State",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "HSN",
+          "title": "Hof van Saksen",
+          "position": {
+              "lat": 52.965351,
+              "lng": 6.6762948
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HSN",
+              "brand": "HSN",
+              "parkName": "Hof van Saksen",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "HVL",
+          "title": "Vakantiepark Heideheuvel",
+          "position": {
+              "lat": 52.140188,
+              "lng": 6.001883
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HVL",
+              "brand": "LGP",
+              "parkName": "Heideheuvel",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "HVS",
+          "title": "Vakantiepark Hoog Vaals",
+          "position": {
+              "lat": 50.774529,
+              "lng": 6.005564
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HVS",
+              "brand": "LGP",
+              "parkName": "Hoog Vaals",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "HWD",
+          "title": "Vakantiepark Hochwald",
+          "position": {
+              "lat": 49.648257,
+              "lng": 6.811373
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "HWD",
+              "brand": "LGP",
+              "parkName": "Hochwald",
+              "region": "Saar-Hunsruck"
+          }
+      },
+      {
+          "parkCode": "KBG",
+          "title": "Alpen Chalets Katschberg",
+          "position": {
+              "lat": 47.055666,
+              "lng": 13.610054
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "KBG",
+              "brand": "LGP",
+              "parkName": "Katschberg",
+              "region": "Carinthia"
+          }
+      },
+      {
+          "parkCode": "KDR",
+          "title": "Vakantiepark De Katjeskelder",
+          "position": {
+              "lat": 51.6303054415,
+              "lng": 4.83093738556
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "KDR",
+              "brand": "LGP",
+              "parkName": "De Katjeskelder",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "KEE",
+          "title": "Vakantiepark Eifelpark Kronenburger See",
+          "position": {
+              "lat": 50.36143,
+              "lng": 6.46802
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "KEE",
+              "brand": "LGP",
+              "parkName": "Eifelpark Kronenburger See",
+              "region": "North Rhine-Westphalia"
+          }
+      },
+      {
+          "parkCode": "KLS",
+          "title": "Alps Resorts Kreischberg Chalets",
+          "position": {
+              "lat": 47.1005093,
+              "lng": 14.0830595
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "KLS",
+              "brand": "LGP",
+              "parkName": "Kreischberg Chalets",
+              "region": "stiermarken"
+          }
+      },
+      {
+          "parkCode": "KNK",
+          "title": "Vakantiepark Klein Vink",
+          "position": {
+              "lat": 51.496949,
+              "lng": 6.178405
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "KNK",
+              "brand": "LGP",
+              "parkName": "Klein Vink",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "KRK",
+          "title": "Vakantiepark Kijkduin",
+          "position": {
+              "lat": 52.060153,
+              "lng": 4.211729
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "KRK",
+              "brand": "LGP",
+              "parkName": "Vakantiepark Kijkduin",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "KVL",
+          "title": "Vakantievilla's Kaatsheuvel",
+          "position": {
+              "lat": 51.65773,
+              "lng": 5.06816
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "KVL",
+              "brand": "LGP",
+              "parkName": "Kaatsheuvel",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "KWK",
+          "title": "Vakantiepark Klein Oisterwijk",
+          "position": {
+              "lat": 51.55364,
+              "lng": 5.226596
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "KWK",
+              "brand": "LGP",
+              "parkName": "Klein Oisterwijk",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "KWS",
+          "title": "Vakantiepark Kenwick Woods",
+          "position": {
+              "lat": 53.35743,
+              "lng": 0.00834
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "KWS",
+              "brand": "LGP",
+              "parkName": "Kenwick Woods",
+              "region": "Lincolnshire"
+          }
+      },
+      {
+          "parkCode": "KWT",
+          "title": "Strandappartementen Kaap West",
+          "position": {
+              "lat": 53.356871,
+              "lng": 5.21206
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "KWT",
+              "brand": "LGP",
+              "parkName": "Kaap West",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "LEN",
+          "title": "Vakantiepark Bospark Lunsbergen",
+          "position": {
+              "lat": 52.931728,
+              "lng": 6.746391
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "LEN",
+              "brand": "LGP",
+              "parkName": "Bospark Lunsbergen",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "LGE",
+          "title": "Vakantiepark Landgoed Bourtange",
+          "position": {
+              "lat": 52.9464417976004,
+              "lng": 7.13139250653978
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "LGE",
+              "brand": "LGP",
+              "parkName": "Landgoed Bourtange",
+              "region": "Groningen"
+          }
+      },
+      {
+          "parkCode": "LGN",
+          "title": "Vakantiepark De Lommerbergen",
+          "position": {
+              "lat": 51.282485,
+              "lng": 6.055324
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "LGN",
+              "brand": "LGP",
+              "parkName": "De Lommerbergen",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "LJE",
+          "title": "Vakantiepark Het Land van Bartje",
+          "position": {
+              "lat": 52.90799,
+              "lng": 6.812607
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "LJE",
+              "brand": "LGP",
+              "parkName": "Het Land van Bartje",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "LLY",
+          "title": "Vakantiepark Leycroft Valley",
+          "position": {
+              "lat": 50.33329,
+              "lng": -5.16147
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "LLY",
+              "brand": "LGP",
+              "parkName": "Leycroft Valley",
+              "region": "Cornwall"
+          }
+      },
+      {
+          "parkCode": "LOO",
+          "title": "Vakantiepark Landgoed 't Loo",
+          "position": {
+              "lat": 52.441695,
+              "lng": 5.953554
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "LOO",
+              "brand": "LGP",
+              "parkName": "Landgoed 't Loo",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "LRE",
+          "title": "Village l'Eau d'Heure",
+          "position": {
+              "lat": 50.192053,
+              "lng": 4.352131
+          },
+          "measurementPark": {
+              "country": "BE",
+              "code": "LRE",
+              "brand": "LGP",
+              "parkName": "Village l'Eau d'Heure",
+              "region": "Wallonie"
+          }
+      },
+      {
+          "parkCode": "LRT",
+          "title": "Laceby Manor Resort & Spa",
+          "position": {
+              "lat": 53.5285001,
+              "lng": -0.157048
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "LRT",
+              "brand": "LGP",
+              "parkName": "Laceby Manor Resort & Spa",
+              "region": "Lincolnshire"
+          }
+      },
+      {
+          "parkCode": "LSE",
+          "title": "Villapark Livingstone",
+          "position": {
+              "lat": 51.68616,
+              "lng": 3.729966
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "LSE",
+              "brand": "LGP",
+              "parkName": "Villapark Livingstone",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "MAM",
+          "title": "Alpen Resort Maria Alm",
+          "position": {
+              "lat": 47.405192,
+              "lng": 12.900778
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "MAM",
+              "brand": "LGP",
+              "parkName": "Resort Maria Alm",
+              "region": "Salzburgerland"
+          }
+      },
+      {
+          "parkCode": "MBG",
+          "title": "Vakantiepark Miggelenberg",
+          "position": {
+              "lat": 52.128944,
+              "lng": 5.900302
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "MBG",
+              "brand": "LGP",
+              "parkName": "Miggelenberg",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "MDM",
+          "title": "Vakantiepark Marinapark Volendam",
+          "position": {
+              "lat": 52.490283,
+              "lng": 5.063115
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "MDM",
+              "brand": "LGP",
+              "parkName": "Marinapark Volendam",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "MDN",
+          "title": "Eilandhuisjes Marker Wadden",
+          "position": {
+              "lat": 52.582297,
+              "lng": 5.367041
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "MDN",
+              "brand": "LGP",
+              "parkName": "Marker Wadden",
+              "region": "Flevoland"
+          }
+      },
+      {
+          "parkCode": "MNO",
+          "title": "Vakantiepark Marina Lipno",
+          "position": {
+              "lat": 48.641161,
+              "lng": 14.223711
+          },
+          "measurementPark": {
+              "country": "CZ",
+              "code": "MNO",
+              "brand": "LGP",
+              "parkName": "Marina Lipno",
+              "region": "South_Bohemia"
+          }
+      },
+      {
+          "parkCode": "MRT",
+          "title": "Vakantiepark Marwell Resort",
+          "position": {
+              "lat": 50.985721,
+              "lng": -1.276706
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "MRT",
+              "brand": "LGP",
+              "parkName": "Marwell Resort",
+              "region": "Hampshire"
+          }
+      },
+      {
+          "parkCode": "MSA",
+          "title": "Marissa Resort",
+          "position": {
+              "lat": 52.5172718,
+              "lng": 8.3664482
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "MSA",
+              "brand": "LGP",
+              "parkName": "Marissa Resort",
+              "region": null
+          }
+      },
+      {
+          "parkCode": "MSS",
+          "title": "Alps Resorts Montafon Suites Schruns",
+          "position": {
+              "lat": 47.0794231575481,
+              "lng": 9.9219292254976
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "MSS",
+              "brand": "LGP",
+              "parkName": "Montafon Suites Schruns",
+              "region": "Vorarlberg"
+          }
+      },
+      {
+          "parkCode": "MWL",
+          "title": "Marina Resort Well",
+          "position": {
+              "lat": 51.5705941,
+              "lng": 6.0596752
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "MWL",
+              "brand": "LGP",
+              "parkName": "Marina Resort Well",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "MYL",
+          "title": "Vakantiepark Mont Royal",
+          "position": {
+              "lat": 49.986267,
+              "lng": 7.110354
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "MYL",
+              "brand": "LGP",
+              "parkName": "Mont Royal",
+              "region": "Moselle"
+          }
+      },
+      {
+          "parkCode": "NBD",
+          "title": "Strand Resort Nieuwvliet-Bad",
+          "position": {
+              "lat": 51.38894,
+              "lng": 3.45629
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "NBD",
+              "brand": "LGP",
+              "parkName": "Strand Resort Nieuwvliet-Bad",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "NBT",
+          "title": "Vakantiepark Nature Parc Saint Hubert",
+          "position": {
+              "lat": 50.0214224061196,
+              "lng": 5.30510116697585
+          },
+          "measurementPark": {
+              "country": "BE",
+              "code": "NBT",
+              "brand": "LGP",
+              "parkName": "Nature Parc Saint Hubert",
+              "region": "Ardennen"
+          }
+      },
+      {
+          "parkCode": "NGS",
+          "title": "Vakantiepark North Lakes",
+          "position": {
+              "lat": 54.7710136,
+              "lng": -3.3017224
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "NGS",
+              "brand": "LGP",
+              "parkName": "North Lakes",
+              "region": "Lake_District"
+          }
+      },
+      {
+          "parkCode": "NHE",
+          "title": "Alps Resorts Naturchalets Turracher Höhe",
+          "position": {
+              "lat": 46.9235492288767,
+              "lng": 13.8697802252892
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "NHE",
+              "brand": "LGP",
+              "parkName": "Naturchalets Turracher Höhe",
+              "region": "stiermarken"
+          }
+      },
+      {
+          "parkCode": "NRE",
+          "title": "Glamping Resort Namur Nature",
+          "position": {
+              "lat": 50.433730616807,
+              "lng": 5.00504901254743
+          },
+          "measurementPark": {
+              "country": "BE",
+              "code": "NRE",
+              "brand": "LGP",
+              "parkName": "Namur Nature",
+              "region": "Ardennen"
+          }
+      },
+      {
+          "parkCode": "NTU",
+          "title": "Glamping Neufchâteau",
+          "position": {
+              "lat": 49.8324292,
+              "lng": 5.4140336
+          },
+          "measurementPark": {
+              "country": "BE",
+              "code": "NTU",
+              "brand": "LGP",
+              "parkName": "Glamping Neufchâteau",
+              "region": "Ardennen"
+          }
+      },
+      {
+          "parkCode": "NVD",
+          "title": "Beach Resort Nieuwvliet-Bad",
+          "position": {
+              "lat": 51.3841703195596,
+              "lng": 3.44797608382919
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "NVD",
+              "brand": "LGP",
+              "parkName": "Beach Resort Nieuwvliet-Bad",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "ODN",
+          "title": "Strand Resort Ouddorp Duin",
+          "position": {
+              "lat": 51.8213538,
+              "lng": 3.9077296
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ODN",
+              "brand": "LGP",
+              "parkName": "Strand Resort Ouddorp Duin",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "OHE",
+          "title": "Waterpark Oudehaske",
+          "position": {
+              "lat": 52.9518088,
+              "lng": 5.8694618
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "OHE",
+              "brand": "LGP",
+              "parkName": "Waterpark Oudehaske",
+              "region": "Friesland"
+          }
+      },
+      {
+          "parkCode": "OKE",
+          "title": "Vakantiepark Orveltermarke",
+          "position": {
+              "lat": 52.8343535,
+              "lng": 6.6647519
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "OKE",
+              "brand": "LGP",
+              "parkName": "Orveltermarke",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "ONE",
+          "title": "Beach Resort Ooghduyne",
+          "position": {
+              "lat": 52.8989701,
+              "lng": 4.7404013
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ONE",
+              "brand": "LGP",
+              "parkName": "Beach Resort Ooghduyne",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "OTK",
+          "title": "Vakantiepark Olde Kottink",
+          "position": {
+              "lat": 52.3534713,
+              "lng": 7.0107973
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "OTK",
+              "brand": "LGP",
+              "parkName": "Olde Kottink",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "OVW",
+          "title": "Bryn Morfydd",
+          "position": {
+              "lat": 53.161253,
+              "lng": -3.37967
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "OVW",
+              "brand": "LGP",
+              "parkName": "Bryn Morfydd",
+              "region": "North Wales"
+          }
+      },
+      {
+          "parkCode": "PDM",
+          "title": "Vakantiepark Piperdam",
+          "position": {
+              "lat": 56.499415,
+              "lng": -3.13156
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "PDM",
+              "brand": "LGP",
+              "parkName": "Piperdam",
+              "region": "Dundee_and_Angus"
+          }
+      },
+      {
+          "parkCode": "PLO",
+          "title": "Vakantievilla's PUUR Exloo",
+          "position": {
+              "lat": 52.8645054,
+              "lng": 6.8854532
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "PLO",
+              "brand": "LGP",
+              "parkName": "PUUR Exloo",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "PTN",
+          "title": "Strandhuisjes Zeezigt",
+          "position": {
+              "lat": 52.7718245060674,
+              "lng": 4.65735283547921
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "PTN",
+              "brand": "LGP",
+              "parkName": "Zeezigt",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "PVE",
+          "title": "Vakantiepark Port Greve",
+          "position": {
+              "lat": 51.73952,
+              "lng": 3.894696
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "PVE",
+              "brand": "LGP",
+              "parkName": "Port Greve",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "RBN",
+          "title": "Residence Berger Duinen",
+          "position": {
+              "lat": 52.70795,
+              "lng": 4.69008
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RBN",
+              "brand": "LGP",
+              "parkName": "Residence Berger Duinen",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "RCE",
+          "title": "Résidence 't Hof van Haamstede",
+          "position": {
+              "lat": 51.683625,
+              "lng": 3.721318
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RCE",
+              "brand": "LGP",
+              "parkName": "Résidence 't Hof van Haamstede",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "RCH",
+          "title": "Vakantiepark Beach Resort Kamperland",
+          "position": {
+              "lat": 51.58952,
+              "lng": 3.72102
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RCH",
+              "brand": "LGP",
+              "parkName": "Beach Resort Kamperland",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "RDE",
+          "title": "Resort Haamstede",
+          "position": {
+              "lat": 51.687204,
+              "lng": 3.727756
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RDE",
+              "brand": "LGP",
+              "parkName": "Resort Haamstede",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "RDN",
+          "title": "Strandappartementen Residence Ouddorp Duin",
+          "position": {
+              "lat": 51.82331,
+              "lng": 3.90953
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RDN",
+              "brand": "LGP",
+              "parkName": "Residence Ouddorp Duin",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "RFT",
+          "title": "Vakantiepark Rockingham Forest",
+          "position": {
+              "lat": 52.5753317,
+              "lng": -0.4671005
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "RFT",
+              "brand": "LGP",
+              "parkName": "Rockingham Forest",
+              "region": "Northamptonshire"
+          }
+      },
+      {
+          "parkCode": "RHL",
+          "title": "Vakantiepark Rabbit Hill",
+          "position": {
+              "lat": 52.2183679,
+              "lng": 5.7879908
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RHL",
+              "brand": "LGP",
+              "parkName": "Rabbit Hill",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "RJG",
+          "title": "Vakantiepark Rønbjerg",
+          "position": {
+              "lat": 56.8928079,
+              "lng": 9.1690028
+          },
+          "measurementPark": {
+              "country": "DK",
+              "code": "RJG",
+              "brand": "LGP",
+              "parkName": "Rønbjerg",
+              "region": "Jutland"
+          }
+      },
+      {
+          "parkCode": "RLS",
+          "title": "Vakantiepark Reevallis",
+          "position": {
+              "lat": 50.789249,
+              "lng": 5.968658
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RLS",
+              "brand": "LGP",
+              "parkName": "Reevallis",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "RSN",
+          "title": "Vakantiepark De Reeuwijkse Plassen",
+          "position": {
+              "lat": 52.057392,
+              "lng": 4.734249
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RSN",
+              "brand": "LGP",
+              "parkName": "De Reeuwijkse Plassen",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "RWD",
+          "title": "Resort Roodewoud",
+          "position": {
+              "lat": 52.9846,
+              "lng": 6.6483
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RWD",
+              "brand": "LGP",
+              "parkName": "Roodewoud",
+              "region": "Drenthe"
+          }
+      },
+      {
+          "parkCode": "SAR",
+          "title": "Vakantiepark Soof aan de Rijn",
+          "position": {
+              "lat": 51.9823597387447,
+              "lng": 5.4503493234746
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SAR",
+              "brand": "LGP",
+              "parkName": "Soof aan de Rijn",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "SBG",
+          "title": "Vakantiepark Sonnenberg",
+          "position": {
+              "lat": 49.803438,
+              "lng": 6.891207
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "SBG",
+              "brand": "LGP",
+              "parkName": "Sonnenberg",
+              "region": "Moselle"
+          }
+      },
+      {
+          "parkCode": "SBK",
+          "title": "Vakantiepark Stroombroek",
+          "position": {
+              "lat": 51.932756,
+              "lng": 6.269567
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SBK",
+              "brand": "LGP",
+              "parkName": "Stroombroek",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "SBS",
+          "title": "Beach Park Schuttersbos",
+          "position": {
+              "lat": 53.389123,
+              "lng": 5.270382
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SBS",
+              "brand": "LGP",
+              "parkName": "Schuttersbos",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "SDS",
+          "title": "Vakantiepark Salztal Paradies",
+          "position": {
+              "lat": 51.595639,
+              "lng": 10.545436
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "SDS",
+              "brand": "LGP",
+              "parkName": "Salztal Paradies",
+              "region": "Harz"
+          }
+      },
+      {
+          "parkCode": "SDT",
+          "title": "Vakantiepark Søhøjlandet",
+          "position": {
+              "lat": 56.217768,
+              "lng": 9.7272133
+          },
+          "measurementPark": {
+              "country": "DK",
+              "code": "SDT",
+              "brand": "LGP",
+              "parkName": "Søhøjlandet",
+              "region": "Jutland"
+          }
+      },
+      {
+          "parkCode": "SGS",
+          "title": "Vakantiepark Hexham Lodges",
+          "position": {
+              "lat": 54.89602,
+              "lng": -2.01996
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "SGS",
+              "brand": "LGP",
+              "parkName": "Hexham Lodges",
+              "region": "Northumberland"
+          }
+      },
+      {
+          "parkCode": "SHG",
+          "title": "Vakantiepark Sallandse Heuvelrug",
+          "position": {
+              "lat": 52.38415,
+              "lng": 6.55606
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SHG",
+              "brand": "LGP",
+              "parkName": "Sallandse Heuvelrug",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "SLI",
+          "title": "Vakantiepark Sluftervallei",
+          "position": {
+              "lat": 53.157374,
+              "lng": 4.844456
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SLI",
+              "brand": "LGP",
+              "parkName": "Sluftervallei",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "SMR",
+          "title": "Waterpark Sneekermeer",
+          "position": {
+              "lat": 53.04094,
+              "lng": 5.769009
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SMR",
+              "brand": "LGP",
+              "parkName": "Waterpark Sneekermeer",
+              "region": "Friesland"
+          }
+      },
+      {
+          "parkCode": "SNN",
+          "title": "Vakantiepark De Strabrechtse Vennen",
+          "position": {
+              "lat": 51.38654,
+              "lng": 5.66937
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SNN",
+              "brand": "LGP",
+              "parkName": "De Strabrechtse Vennen",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "SOH",
+          "title": "Natuurdorp Suyderoogh",
+          "position": {
+              "lat": 53.389438,
+              "lng": 6.214516
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SOH",
+              "brand": "LGP",
+              "parkName": "Natuurdorp Suyderoogh",
+              "region": "Groningen"
+          }
+      },
+      {
+          "parkCode": "SRE",
+          "title": "Vakantiepark St. Pierre",
+          "position": {
+              "lat": 51.389566,
+              "lng": 3.450301
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SRE",
+              "brand": "LGP",
+              "parkName": "St. Pierre",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "SRG",
+          "title": "Vakantiepark Domein De Schatberg",
+          "position": {
+              "lat": 51.384317,
+              "lng": 5.971155
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SRG",
+              "brand": "LGP",
+              "parkName": "Domein De Schatberg",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "SRP",
+          "title": "Strandhuisjes Julianadorp",
+          "position": {
+              "lat": 52.89998,
+              "lng": 4.71254
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SRP",
+              "brand": "LGP",
+              "parkName": "Strandhuisjes Julianadorp",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "SRT",
+          "title": "Vakantiepark De Soeten Haert",
+          "position": {
+              "lat": 51.7390181,
+              "lng": 3.7969772
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SRT",
+              "brand": "LGP",
+              "parkName": "De Soeten Haert",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "SUH",
+          "title": "Vakantiepark Soof Heuvelrug",
+          "position": {
+              "lat": 51.9995079479212,
+              "lng": 5.54323501532397
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SUH",
+              "brand": "LGP",
+              "parkName": "Soof Heuvelrug",
+              "region": "Utrecht"
+          }
+      },
+      {
+          "parkCode": "SWT",
+          "title": "Vakantiepark Seawest",
+          "position": {
+              "lat": 55.787794,
+              "lng": 8.2460973
+          },
+          "measurementPark": {
+              "country": "DK",
+              "code": "SWT",
+              "brand": "LGP",
+              "parkName": "Seawest",
+              "region": "Jutland"
+          }
+      },
+      {
+          "parkCode": "SZE",
+          "title": "Vakantiepark Strandhuisjes Wijk aan Zee",
+          "position": {
+              "lat": 52.4977829,
+              "lng": 4.5869687
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SZE",
+              "brand": "LGP",
+              "parkName": "Strandhuisjes Wijk aan Zee",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "TDE",
+          "title": "Beach Park Travemünde",
+          "position": {
+              "lat": 53.956211,
+              "lng": 10.883503
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "TDE",
+              "brand": "LGP",
+              "parkName": "Travemünde",
+              "region": "Baltic_Sea"
+          }
+      },
+      {
+          "parkCode": "TKS",
+          "title": "Twin Lakes",
+          "position": {
+              "lat": 54.156432,
+              "lng": -2.737091
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "TKS",
+              "brand": "LGP",
+              "parkName": "Twin Lakes",
+              "region": "Lake_District"
+          }
+      },
+      {
+          "parkCode": "TNE",
+          "title": "Waterpark Terherne",
+          "position": {
+              "lat": 53.0411179,
+              "lng": 5.7820905
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "TNE",
+              "brand": "LGP",
+              "parkName": "Waterpark Terherne",
+              "region": "Friesland"
+          }
+      },
+      {
+          "parkCode": "TTS",
+          "title": "Alps Resorts Turrach Suites 410",
+          "position": {
+              "lat": 46.9279181,
+              "lng": 13.8680874
+          },
+          "measurementPark": {
+              "country": "AT",
+              "code": "TTS",
+              "brand": "LGP",
+              "parkName": "Turrach Suites 410",
+              "region": "stiermarken"
+          }
+      },
+      {
+          "parkCode": "TVD",
+          "title": "Vakantiepark Twenhaarsveld",
+          "position": {
+              "lat": 52.284604,
+              "lng": 6.444405
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "TVD",
+              "brand": "LGP",
+              "parkName": "Twenhaarsveld",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "TXL",
+          "title": "Vakantiepark Kustpark Texel",
+          "position": {
+              "lat": 53.090702,
+              "lng": 4.76719
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "TXL",
+              "brand": "LGP",
+              "parkName": "Kustpark Texel",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "UHS",
+          "title": "Ullswater Heights",
+          "position": {
+              "lat": 54.6583075781072,
+              "lng": -2.83501858690189
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "UHS",
+              "brand": "LGP",
+              "parkName": "Ullswater Heights",
+              "region": "Lake_District"
+          }
+      },
+      {
+          "parkCode": "VBS",
+          "title": "Vakantiepark Het Vennenbos",
+          "position": {
+              "lat": 51.345062,
+              "lng": 5.250349
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VBS",
+              "brand": "LGP",
+              "parkName": "Het Vennenbos",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "VDM",
+          "title": "Waterpark Volendam",
+          "position": {
+              "lat": 52.489734,
+              "lng": 5.069493
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VDM",
+              "brand": "LGP",
+              "parkName": "Volendam",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "VDN",
+          "title": "Strandappartementen Vlieduyn",
+          "position": {
+              "lat": 53.3049056,
+              "lng": 5.0633892
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VDN",
+              "brand": "LGP",
+              "parkName": "Vlieduyn",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "VES",
+          "title": "Vakantiepark De Vers",
+          "position": {
+              "lat": 51.564493,
+              "lng": 5.955963
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VES",
+              "brand": "LGP",
+              "parkName": "De Vers",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "VGE",
+          "title": "Vakantiepark De Vlegge",
+          "position": {
+              "lat": 52.4746,
+              "lng": 6.630997
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VGE",
+              "brand": "LGP",
+              "parkName": "De Vlegge",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "VKK",
+          "title": "Vakantiepark Park Veerse Kreek",
+          "position": {
+              "lat": 51.546449,
+              "lng": 3.813918
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VKK",
+              "brand": "LGP",
+              "parkName": "Park Veerse Kreek",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "VLS",
+          "title": "Village les Gottales",
+          "position": {
+              "lat": 50.353388,
+              "lng": 5.862343
+          },
+          "measurementPark": {
+              "country": "BE",
+              "code": "VLS",
+              "brand": "LGP",
+              "parkName": "Village les Gottales",
+              "region": "Ardennen"
+          }
+      },
+      {
+          "parkCode": "VMR",
+          "title": "Waterparc Veluwemeer",
+          "position": {
+              "lat": 52.385606,
+              "lng": 5.629206
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VMR",
+              "brand": "LGP",
+              "parkName": "Waterparc Veluwemeer",
+              "region": "Flevoland"
+          }
+      },
+      {
+          "parkCode": "VMT",
+          "title": "Villapark Vogelmient",
+          "position": {
+              "lat": 53.095245,
+              "lng": 4.7582
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VMT",
+              "brand": "LGP",
+              "parkName": "Villapark Vogelmient",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "VRS",
+          "title": "Strandappartementen Vitamaris",
+          "position": {
+              "lat": 53.484266,
+              "lng": 6.157923
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VRS",
+              "brand": "LGP",
+              "parkName": "Vitamaris",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "VSE",
+          "title": "Alpen Resort Vierwaldstättersee",
+          "position": {
+              "lat": 46.9815,
+              "lng": 8.617959
+          },
+          "measurementPark": {
+              "country": "CH",
+              "code": "VSE",
+              "brand": "LGP",
+              "parkName": "Vierwaldstättersee",
+              "region": "Central_Switserland"
+          }
+      },
+      {
+          "parkCode": "VVE",
+          "title": "Vakantiepark De Vlinderhoeve",
+          "position": {
+              "lat": 52.21919,
+              "lng": 6.262752
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VVE",
+              "brand": "LGP",
+              "parkName": "De Vlinderhoeve",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "WBG",
+          "title": "Vakantiepark Warsberg",
+          "position": {
+              "lat": 49.61575,
+              "lng": 6.54428
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "WBG",
+              "brand": "LGP",
+              "parkName": "Warsberg",
+              "region": "Saar-Hunsruck"
+          }
+      },
+      {
+          "parkCode": "WDE",
+          "title": "Vakantiepark Résidence Wijngaerde",
+          "position": {
+              "lat": 51.5646928663,
+              "lng": 3.49805116653
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "WDE",
+              "brand": "LGP",
+              "parkName": "Résidence Wijngaerde",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "WFG",
+          "title": "Vakantievilla's De Waufsberg",
+          "position": {
+              "lat": 50.775744,
+              "lng": 5.83597
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "WFG",
+              "brand": "LGP",
+              "parkName": "De Waufsberg",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "WGE",
+          "title": "Vakantiepark Whitbarrow",
+          "position": {
+              "lat": 54.647454,
+              "lng": -2.917136
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "WGE",
+              "brand": "LGP",
+              "parkName": "Whitbarrow",
+              "region": "Lake_District"
+          }
+      },
+      {
+          "parkCode": "WLG",
+          "title": "Strandappartementen West Terschelling",
+          "position": {
+              "lat": 53.367043,
+              "lng": 5.21977
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "WLG",
+              "brand": "LGP",
+              "parkName": "West Terschelling",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "WLL",
+          "title": "Whitekirk Hill",
+          "position": {
+              "lat": 56.0344820236183,
+              "lng": -2.64405399913262
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "WLL",
+              "brand": "LGP",
+              "parkName": "Whitekirk Hill",
+              "region": "East_Lothian"
+          }
+      },
+      {
+          "parkCode": "WLS",
+          "title": "Vakantiepark Woodland Lakes",
+          "position": {
+              "lat": 54.217323,
+              "lng": -1.405548
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "WLS",
+              "brand": "LGP",
+              "parkName": "Woodland Lakes",
+              "region": "Yorkshire"
+          }
+      },
+      {
+          "parkCode": "WNS",
+          "title": "Vakantiepark Park Wijdenes",
+          "position": {
+              "lat": 52.6252961,
+              "lng": 5.1550917
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "WNS",
+              "brand": "LGP",
+              "parkName": "Park Wijdenes",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "WRG",
+          "title": "Vakantiepark Winterberg",
+          "position": {
+              "lat": 51.198084,
+              "lng": 8.513428
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "WRG",
+              "brand": "LGP",
+              "parkName": "Winterberg",
+              "region": "Sauerland"
+          }
+      },
+      {
+          "parkCode": "WSA",
+          "title": "Whalesborough Resort & Spa",
+          "position": {
+              "lat": 50.8074162,
+              "lng": -4.5424824
+          },
+          "measurementPark": {
+              "country": "VK",
+              "code": "WSA",
+              "brand": "LGP",
+              "parkName": "Whalesborough Resort & Spa",
+              "region": "Cornwall"
+          }
+      },
+      {
+          "parkCode": "WSN",
+          "title": "Vakantiepark De Wedderplassen",
+          "position": {
+              "lat": 53.0830800441862,
+              "lng": 7.07432826673363
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "WSN",
+              "brand": "LGP",
+              "parkName": "De Wedderplassen",
+              "region": "Groningen"
+          }
+      },
+      {
+          "parkCode": "WTL",
+          "title": "Vakantiepark Wirfttal",
+          "position": {
+              "lat": 50.339642,
+              "lng": 6.538668
+          },
+          "measurementPark": {
+              "country": "DE",
+              "code": "WTL",
+              "brand": "LGP",
+              "parkName": "Wirfttal",
+              "region": "Eifel"
+          }
+      },
+      {
+          "parkCode": "WVE",
+          "title": "Vakantiepark Water Village",
+          "position": {
+              "lat": 51.58987,
+              "lng": 3.71293
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "WVE",
+              "brand": "LGP",
+              "parkName": "Water Village",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "WVN",
+          "title": "Vakantiepark Bospark 't Wolfsven",
+          "position": {
+              "lat": 51.437464,
+              "lng": 5.592846
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "WVN",
+              "brand": "LGP",
+              "parkName": "Bospark 't Wolfsven",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "ZBD",
+          "title": "Vakantiepark Zeebad",
+          "position": {
+              "lat": 51.40472,
+              "lng": 3.532195
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ZBD",
+              "brand": "LGP",
+              "parkName": "Zeebad",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "ZDL",
+          "title": "Vakantiepark Mooi Zutendaal",
+          "position": {
+              "lat": 50.917349,
+              "lng": 5.596676
+          },
+          "measurementPark": {
+              "country": "BE",
+              "code": "ZDL",
+              "brand": "LGP",
+              "parkName": "Mooi Zutendaal",
+              "region": "Belgisch_Limburg"
+          }
+      },
+      {
+          "parkCode": "ZPT",
+          "title": "Camping De Zandput",
+          "position": {
+              "lat": 51.587142,
+              "lng": 3.609306
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ZPT",
+              "brand": "LGP",
+              "parkName": "Camping De Zandput",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "ZRT",
+          "title": "Vakantiepark Zandvoort",
+          "position": {
+              "lat": 52.3860095,
+              "lng": 4.5357017
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ZRT",
+              "brand": "LGP",
+              "parkName": "Zandvoort",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "ACN",
+          "title": "Resort Arcen",
+          "position": {
+              "lat": 51.480132,
+              "lng": 6.213166
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "ACN",
+              "brand": "RGP",
+              "parkName": "Resort Arcen",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "BEE",
+          "title": "Appartementencomplex Bosch en Zee",
+          "position": {
+              "lat": 53.09402,
+              "lng": 4.770182
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "BEE",
+              "brand": "RGP",
+              "parkName": "Appartementencomplex Bosch en Zee",
+              "region": "Wadden"
+          }
+      },
+      {
+          "parkCode": "CWE",
+          "title": "Cuber Veluwe",
+          "position": {
+              "lat": 52.1194983,
+              "lng": 5.9135401
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "CWE",
+              "brand": "RGP",
+              "parkName": "Cuber Veluwe",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "DAR",
+          "title": "Duinresort Dunimar",
+          "position": {
+              "lat": 52.2912411,
+              "lng": 4.5218304
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "DAR",
+              "brand": "RGP",
+              "parkName": "Duinresort Dunimar",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "EZE",
+          "title": "Roompot Kustpark Egmond aan Zee",
+          "position": {
+              "lat": 52.6219767,
+              "lng": 4.6396321
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "EZE",
+              "brand": "RGP",
+              "parkName": "Roompot Kustpark Egmond aan Zee",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "GNT",
+          "title": "De Graaf van Egmont",
+          "position": {
+              "lat": 52.621874,
+              "lng": 4.621818
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "GNT",
+              "brand": "RGP",
+              "parkName": "De Graaf van Egmont",
+              "region": "North_Holland"
+          }
+      },
+      {
+          "parkCode": "GRN",
+          "title": "Vakantiepark Giethoorn",
+          "position": {
+              "lat": 52.723993,
+              "lng": 6.09076
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "GRN",
+              "brand": "RGP",
+              "parkName": "Vakantiepark Giethoorn",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "HND",
+          "title": "Roompot Beach Villa's Hoek van Holland",
+          "position": {
+              "lat": 51.9850892,
+              "lng": 4.102409
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "HND",
+              "brand": "RGP",
+              "parkName": "Roompot Beach Villa's Hoek van Holland",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "LMR",
+          "title": "Roompot Glamping Lauwersmeer",
+          "position": {
+              "lat": 53.3599617,
+              "lng": 6.2944398
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "LMR",
+              "brand": "RGP",
+              "parkName": "Roompot Glamping Lauwersmeer",
+              "region": "Groningen"
+          }
+      },
+      {
+          "parkCode": "MWE",
+          "title": "Marber Veluwe",
+          "position": {
+              "lat": 52.1194952,
+              "lng": 5.9135464
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "MWE",
+              "brand": "RGP",
+              "parkName": "Marber Veluwe",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "OZL",
+          "title": "Waterstaete Ossenzijl",
+          "position": {
+              "lat": 52.809763,
+              "lng": 5.921198
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "OZL",
+              "brand": "RGP",
+              "parkName": "Waterstaete Ossenzijl",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "RGN",
+          "title": "Noordzee Resort Vlissingen",
+          "position": {
+              "lat": 51.451144,
+              "lng": 3.55693
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "RGN",
+              "brand": "RGP",
+              "parkName": "Noordzee Resort Vlissingen",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "SGL",
+          "title": "Bungalowpark Schin op Geul",
+          "position": {
+              "lat": 50.85699,
+              "lng": 5.868156
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SGL",
+              "brand": "RGP",
+              "parkName": "Bungalowpark Schin op Geul",
+              "region": "Limburg"
+          }
+      },
+      {
+          "parkCode": "SGN",
+          "title": "Nautisch Centrum Scheveningen",
+          "position": {
+              "lat": 52.0956015,
+              "lng": 4.2617831
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SGN",
+              "brand": "RGP",
+              "parkName": "Nautisch Centrum Scheveningen",
+              "region": "South_Holland"
+          }
+      },
+      {
+          "parkCode": "SJK",
+          "title": "Vakantiepark Schaijk",
+          "position": {
+              "lat": 51.7310960786082,
+              "lng": 5.64241646331597
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SJK",
+              "brand": "RGP",
+              "parkName": "Vakantiepark Schaijk",
+              "region": "Noord-Brabant"
+          }
+      },
+      {
+          "parkCode": "SKI",
+          "title": "Bospark De Schaapskooi",
+          "position": {
+              "lat": 52.34316,
+              "lng": 5.9425
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SKI",
+              "brand": "RGP",
+              "parkName": "Bospark De Schaapskooi",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "SND",
+          "title": "Strandpark Zeeland",
+          "position": {
+              "lat": 51.45192,
+              "lng": 3.55665
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "SND",
+              "brand": "RGP",
+              "parkName": "Strandpark Zeeland",
+              "region": "Zeeland"
+          }
+      },
+      {
+          "parkCode": "TLE",
+          "title": "Waterpark Terkaple",
+          "position": {
+              "lat": 53.01174,
+              "lng": 5.784024
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "TLE",
+              "brand": "RGP",
+              "parkName": "Waterpark Terkaple",
+              "region": "Friesland"
+          }
+      },
+      {
+          "parkCode": "TPS",
+          "title": "Recreatiepark De Tolplas",
+          "position": {
+              "lat": 52.41309,
+              "lng": 6.554825
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "TPS",
+              "brand": "RGP",
+              "parkName": "Recreatiepark De Tolplas",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "VHE",
+          "title": "De Veluwse Hoevegaerde",
+          "position": {
+              "lat": 52.2338009,
+              "lng": 5.6189164
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "VHE",
+              "brand": "RGP",
+              "parkName": "De Veluwse Hoevegaerde",
+              "region": "Gelderland"
+          }
+      },
+      {
+          "parkCode": "WBN",
+          "title": "Villapark de Weerribben",
+          "position": {
+              "lat": 52.810701,
+              "lng": 6.000811
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "WBN",
+              "brand": "RGP",
+              "parkName": "Villapark de Weerribben",
+              "region": "Overijssel"
+          }
+      },
+      {
+          "parkCode": "WRN",
+          "title": "Weerterbergen",
+          "position": {
+              "lat": 51.250610966,
+              "lng": 5.65187573433
+          },
+          "measurementPark": {
+              "country": "NL",
+              "code": "WRN",
+              "brand": "RGP",
+              "parkName": "Weerterbergen",
+              "region": "Limburg"
+          }
+      }
+  ]
+}

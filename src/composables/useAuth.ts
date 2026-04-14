@@ -3,17 +3,17 @@ import type { User } from '../types/Park';
 
 const STORAGE_KEY = 'landal_auth';
 
-// Mock users database
+// Mock users database with real Landal park codes
 const MOCK_USERS: User[] = [
   {
     email: 'demo@landal.com',
     name: 'Demo User',
-    visitedParkIds: ['park-1', 'park-5', 'park-12', 'park-23', 'park-34', 'park-45', 'park-56', 'park-67'],
+    visitedParkIds: ['ABG', 'AHT', 'AND', 'BDM', 'COG', 'HDG', 'TXL', 'ONE', 'VDN', 'KWT', 'SLI', 'VDM'],
   },
   {
     email: 'test@landal.com',
     name: 'Test User',
-    visitedParkIds: ['park-2', 'park-8', 'park-15', 'park-28', 'park-41', 'park-52'],
+    visitedParkIds: ['WBG', 'MYL', 'SBG', 'CHM', 'HWD', 'DTR', 'WRG', 'BBG'],
   },
 ];
 

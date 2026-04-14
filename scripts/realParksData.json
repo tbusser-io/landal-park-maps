@@ -1,0 +1,10 @@
+{
+  "markers": [
+    {
+      "parkCode": "ABG",
+      "title": "Vakantiepark Amerongse Berg",
+      "position": { "lat": 52.031576, "lng": 5.518601 },
+      "measurementPark": { "country": "NL", "parkName": "Amerongse Berg", "region": "Utrecht" }
+    }
+  ]
+}
