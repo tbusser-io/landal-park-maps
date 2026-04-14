@@ -147,17 +147,18 @@ const resultCount = computed(() => filteredParks.value.length);
 
 <style scoped>
 .filter-sidebar {
-  background: white;
-  border: 1px solid #e5e7eb;
+  background: var(--site-header-navigation_background-color);
+  border: 1px solid var(--site-header-navigation_border-color);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  box-shadow: var(--site-header-navigation_box-shadow);
 }
 
 .sidebar-header {
   padding: 20px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--site-header-navigation_border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,15 +186,15 @@ const resultCount = computed(() => filteredParks.value.length);
   padding: 16px 20px;
   font-size: 14px;
   font-weight: 600;
-  color: #3b82f6;
-  background: #eff6ff;
-  border-bottom: 1px solid #e5e7eb;
+  color: var(--brand-color);
+  background: white;
+  border-bottom: 1px solid var(--site-header-navigation_border-color);
 }
 
 .active-filters {
   padding: 16px 20px;
-  border-bottom: 1px solid #e5e7eb;
-  background: #f9fafb;
+  border-bottom: 1px solid var(--site-header-navigation_border-color);
+  background: var(--background-color-secondary);
 }
 
 .active-filters-header {
