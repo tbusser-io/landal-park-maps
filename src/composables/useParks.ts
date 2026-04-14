@@ -1,4 +1,4 @@
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed } from 'vue';
 import type { Park } from '../types/Park';
 import { useAuth } from './useAuth';
 import { useFilters } from './useFilters';
@@ -7,7 +7,10 @@ import { useFilters } from './useFilters';
 const allParks = ref<Park[]>([]);
 const loading = ref(true);
 
-// Load parks.json immediately
+/**
+ * Load parks data immediately when module is imported
+ * This runs once globally, not per component
+ */
 (async () => {
   try {
     const module = await import('../data/parks.json');
@@ -19,6 +22,27 @@ const loading = ref(true);
   }
 })();
 
+/**
+ * Composable for accessing and filtering park data
+ *
+ * Provides access to all parks and filtered parks based on current filter state.
+ * Parks are loaded asynchronously from JSON and cached globally.
+ *
+ * @returns Park data and loading state
+ *
+ * @example
+ * ```typescript
+ * const { allParks, filteredParks, loading } = useParks();
+ *
+ * // Wait for data to load
+ * watchEffect(() => {
+ *   if (!loading.value) {
+ *     console.log(`Loaded ${allParks.value.length} parks`);
+ *     console.log(`Filtered to ${filteredParks.value.length} parks`);
+ *   }
+ * });
+ * ```
+ */
 export function useParks() {
   const { user } = useAuth();
   const { filterState } = useFilters();

@@ -1,10 +1,19 @@
 <script setup lang="ts">
 import { ref, watch, onMounted } from 'vue';
 import { GoogleMap, Marker, MarkerCluster } from 'vue3-google-map';
+import { useMediaQuery } from '@vueuse/core';
 import { useParks } from '../composables/useParks';
 import { useAuth } from '../composables/useAuth';
 import type { Park } from '../types/Park';
 import MarkerLegend from './MarkerLegend.vue';
+import { DIMENSIONS, TIMING, MEDIA_QUERIES } from '../constants/layout';
+import { CLUSTER_CONFIG, CLUSTER_COLORS } from '../constants/clustering';
+
+/** Type definition for cluster renderer parameters */
+interface ClusterRenderParams {
+  count: number;
+  position: google.maps.LatLng | google.maps.LatLngLiteral;
+}
 
 const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
@@ -23,6 +32,7 @@ const { user } = useAuth();
 const mapCenter = { lat: 51.0, lng: 10.0 }; // Center of Europe
 const mapRef = ref<InstanceType<typeof GoogleMap> | null>(null);
 const mapReady = ref(false); // Track when map bounds are properly set
+const isMobile = useMediaQuery(MEDIA_QUERIES.MOBILE);
 
 // Map options to hide controls
 const mapOptions = {
@@ -37,7 +47,10 @@ const mapOptions = {
 // Track if this is the first bounds fit
 const isFirstBoundsFit = ref(true);
 
-// Function to fit map bounds with proper padding
+/**
+ * Fits map bounds to show all parks with appropriate padding
+ * Uses longer delay on first load to ensure map is fully initialized
+ */
 const fitMapBounds = async (parks: Park[]) => {
   if (parks.length === 0 || !mapRef.value) {
     return;
@@ -49,7 +62,7 @@ const fitMapBounds = async (parks: Park[]) => {
     if (!mapInstance) return;
 
     // Use longer delay on first load to ensure map is fully initialized
-    const delay = isFirstBoundsFit.value ? 500 : 100;
+    const delay = isFirstBoundsFit.value ? TIMING.MAP_INIT_DELAY : TIMING.MAP_UPDATE_DELAY;
 
     // Small delay to ensure markers are rendered
     setTimeout(() => {
@@ -59,17 +72,18 @@ const fitMapBounds = async (parks: Park[]) => {
       });
 
       // Add padding to account for overlays on desktop
-      // Left: 300px (filter sidebar + margins)
-      // Right: 420px if side panel open, 20px otherwise
-      // Top/Bottom: 20px
-      const isMobile = window.innerWidth <= 767;
-      const padding = isMobile
-        ? { top: 20, right: 20, bottom: 100, left: 20 } // Mobile padding
+      const padding = isMobile.value
+        ? {
+            top: DIMENSIONS.MAP_PADDING,
+            right: DIMENSIONS.MAP_PADDING,
+            bottom: DIMENSIONS.MAP_PADDING_MOBILE_BOTTOM,
+            left: DIMENSIONS.MAP_PADDING
+          }
         : {
-            top: 20,
-            right: props.selectedPark ? 420 : 20,
-            bottom: 20,
-            left: 300
+            top: DIMENSIONS.MAP_PADDING,
+            right: props.selectedPark ? DIMENSIONS.PANEL_WIDTH : DIMENSIONS.MAP_PADDING,
+            bottom: DIMENSIONS.MAP_PADDING,
+            left: DIMENSIONS.SIDEBAR_WIDTH
           };
 
       mapInstance.fitBounds(bounds, padding);
@@ -201,13 +215,24 @@ const handleMarkerClick = (park: Park) => {
   emit('markerClick', park);
 };
 
-// Custom cluster options - use default renderer with brand colors
+/**
+ * Custom cluster renderer with Landal brand colors
+ * Clusters dynamically scale based on the number of markers
+ */
 const clusterOptions = {
   renderer: {
-    render: ({ count, position }: any) => {
+    render: ({ count, position }: ClusterRenderParams) => {
       // Calculate size based on count (scales with number of markers)
-      const baseSize = 40;
-      const size = Math.min(baseSize + Math.floor(count / 10) * 5, 70); // Max size of 70px
+      const size = Math.min(
+        CLUSTER_CONFIG.BASE_SIZE + Math.floor(count / CLUSTER_CONFIG.MARKERS_PER_INCREMENT) * CLUSTER_CONFIG.SIZE_INCREMENT,
+        CLUSTER_CONFIG.MAX_SIZE
+      );
+
+      // Calculate font size based on count
+      const fontSize = Math.min(
+        CLUSTER_CONFIG.BASE_FONT_SIZE + Math.floor(count / CLUSTER_CONFIG.MARKERS_PER_FONT_INCREMENT) * CLUSTER_CONFIG.FONT_SIZE_INCREMENT,
+        CLUSTER_CONFIG.MAX_FONT_SIZE
+      );
 
       const svg = `
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${size}px" height="${size}px" viewBox="0 0 ${size} ${size}" version="1.1">
@@ -222,9 +247,9 @@ const clusterOptions = {
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <g>
               <use fill="black" fill-opacity="1" filter="url(#cluster-filter)" xlink:href="#cluster-path"/>
-              <use fill="#FFFAE9" fill-rule="evenodd" xlink:href="#cluster-path"/>
+              <use fill="${CLUSTER_COLORS.BACKGROUND}" fill-rule="evenodd" xlink:href="#cluster-path"/>
             </g>
-            <text x="${size/2}" y="${size/2 + 6}" text-anchor="middle" font-size="${Math.min(16 + Math.floor(count / 50) * 2, 22)}" font-weight="700" fill="#0097A2" font-family="Inter, arial, sans-serif">${count}</text>
+            <text x="${size/2}" y="${size/2 + 6}" text-anchor="middle" font-size="${fontSize}" font-weight="700" fill="${CLUSTER_COLORS.TEXT}" font-family="Inter, arial, sans-serif">${count}</text>
           </g>
         </svg>
       `;

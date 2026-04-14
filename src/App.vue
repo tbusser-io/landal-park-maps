@@ -7,11 +7,12 @@ import FilterSidebar from './components/FilterSidebar.vue';
 import MapView from './components/MapView.vue';
 import SidePanel from './components/SidePanel.vue';
 import LoginModal from './components/LoginModal.vue';
+import { MEDIA_QUERIES } from './constants/layout';
 
 const selectedPark = ref<Park | null>(null);
 const showLoginModal = ref(false);
 const showFilterSidebar = ref(false);
-const isMobile = useMediaQuery('(max-width: 767px)');
+const isMobile = useMediaQuery(MEDIA_QUERIES.MOBILE);
 
 const handleMarkerClick = (park: Park) => {
   selectedPark.value = park;
