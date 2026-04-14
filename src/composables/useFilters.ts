@@ -10,6 +10,7 @@ const filterState = reactive<FilterState>({
   showUnvisitedOnly: false,
   showPromotionsOnly: false,
   showFavoritesOnly: false,
+  searchQuery: '',
 });
 
 /**
@@ -109,6 +110,15 @@ export function useFilters() {
       });
     }
 
+    if (filterState.searchQuery) {
+      chips.push({
+        label: `Search: "${filterState.searchQuery}"`,
+        key: 'special',
+        value: 'search',
+        filterValue: 'must'
+      });
+    }
+
     return chips;
   });
 
@@ -188,6 +198,16 @@ export function useFilters() {
     filterState.showUnvisitedOnly = false;
     filterState.showPromotionsOnly = false;
     filterState.showFavoritesOnly = false;
+    filterState.searchQuery = '';
+  };
+
+  /**
+   * Sets the search query
+   *
+   * @param query - The search query string
+   */
+  const setSearchQuery = (query: string) => {
+    filterState.searchQuery = query;
   };
 
   /**
@@ -201,6 +221,7 @@ export function useFilters() {
       if (chip.value === 'unvisited') filterState.showUnvisitedOnly = false;
       if (chip.value === 'promotions') filterState.showPromotionsOnly = false;
       if (chip.value === 'favorites') filterState.showFavoritesOnly = false;
+      if (chip.value === 'search') filterState.searchQuery = '';
     } else {
       const category = chip.key as 'countries' | 'features' | 'locations';
       delete filterState[category][chip.value];
@@ -213,6 +234,7 @@ export function useFilters() {
     setFilter,
     getFilter,
     toggleFilter,
+    setSearchQuery,
     clearAll,
     removeChip,
   };

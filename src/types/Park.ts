@@ -49,6 +49,7 @@ export type FilterState = {
   showUnvisitedOnly: boolean;
   showPromotionsOnly: boolean;
   showFavoritesOnly: boolean;
+  searchQuery: string;
 };
 
 export type FilterChip = {

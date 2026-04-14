@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { useFilters } from '../composables/useFilters';
 import { useParks } from '../composables/useParks';
 import { useAuth } from '../composables/useAuth';
@@ -10,9 +10,14 @@ const emit = defineEmits<{
   close: [];
 }>();
 
-const { filterState, activeFilters, setFilter, getFilter, toggleFilter, clearAll, removeChip } = useFilters();
-const { filteredParks } = useParks();
+const { filterState, activeFilters, setFilter, getFilter, toggleFilter, setSearchQuery, clearAll, removeChip } = useFilters();
+const { allParks, filteredParks } = useParks();
 const { isAuthenticated } = useAuth();
+
+// Search autocomplete state
+const searchInput = ref('');
+const showSuggestions = ref(false);
+const selectedSuggestionIndex = ref(-1);
 
 /** All countries with Landal parks (alphabetically sorted) */
 const countries = [
@@ -43,6 +48,92 @@ const locations = [
 ];
 
 const resultCount = computed(() => filteredParks.value.length);
+
+// Normalize text by removing accents/diacritics for better search
+const normalizeText = (text: string): string => {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, ''); // Remove diacritics
+};
+
+// Compute park suggestions based on search input
+const suggestions = computed(() => {
+  if (!searchInput.value || searchInput.value.length < 2) {
+    return [];
+  }
+
+  const query = normalizeText(searchInput.value);
+  return allParks.value
+    .filter(park => {
+      const searchableText = normalizeText([
+        park.name,
+        park.region,
+        park.country
+      ].join(' '));
+      return searchableText.includes(query);
+    })
+    .slice(0, 8); // Limit to 8 suggestions
+});
+
+// Handle input change
+const handleSearchInput = (value: string) => {
+  searchInput.value = value;
+  showSuggestions.value = value.length >= 2;
+  selectedSuggestionIndex.value = -1;
+};
+
+// Handle selecting a suggestion
+const selectSuggestion = (parkName: string) => {
+  setSearchQuery(parkName);
+  searchInput.value = '';
+  showSuggestions.value = false;
+  selectedSuggestionIndex.value = -1;
+};
+
+// Handle keyboard navigation
+const handleKeyDown = (e: KeyboardEvent) => {
+  if (!showSuggestions.value || suggestions.value.length === 0) return;
+
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    selectedSuggestionIndex.value = Math.min(
+      selectedSuggestionIndex.value + 1,
+      suggestions.value.length - 1
+    );
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    selectedSuggestionIndex.value = Math.max(selectedSuggestionIndex.value - 1, -1);
+  } else if (e.key === 'Enter' && selectedSuggestionIndex.value >= 0) {
+    e.preventDefault();
+    const selectedPark = suggestions.value[selectedSuggestionIndex.value];
+    selectSuggestion(selectedPark.name);
+  } else if (e.key === 'Escape') {
+    showSuggestions.value = false;
+    selectedSuggestionIndex.value = -1;
+  }
+};
+
+// Clear search
+const clearSearch = () => {
+  searchInput.value = '';
+  showSuggestions.value = false;
+  selectedSuggestionIndex.value = -1;
+};
+
+// Handle focus
+const handleFocus = () => {
+  if (searchInput.value.length >= 2) {
+    showSuggestions.value = true;
+  }
+};
+
+// Handle blur with delay to allow click events on suggestions
+const handleBlur = () => {
+  window.setTimeout(() => {
+    showSuggestions.value = false;
+  }, 200);
+};
 </script>
 
 <template>
@@ -52,6 +143,50 @@ const resultCount = computed(() => filteredParks.value.length);
       <button class="close-button-mobile" @click="emit('close')" aria-label="Close filters">
         ×
       </button>
+    </div>
+
+    <div class="search-container">
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search parks..."
+          :value="searchInput"
+          @input="(e) => handleSearchInput((e.target as HTMLInputElement).value)"
+          @keydown="handleKeyDown"
+          @focus="handleFocus"
+          @blur="handleBlur"
+          aria-label="Search parks"
+          autocomplete="off"
+        />
+        <button
+          v-if="searchInput"
+          class="clear-search-button"
+          @click="clearSearch"
+          aria-label="Clear search"
+        >
+          ×
+        </button>
+      </div>
+
+      <!-- Suggestions dropdown -->
+      <div v-if="showSuggestions && suggestions.length > 0" class="suggestions-dropdown">
+        <button
+          v-for="(park, index) in suggestions"
+          :key="park.id"
+          class="suggestion-item"
+          :class="{ 'selected': index === selectedSuggestionIndex }"
+          @click="selectSuggestion(park.name)"
+        >
+          <div class="suggestion-name">{{ park.name }}</div>
+          <div class="suggestion-location">{{ park.region }}, {{ park.country }}</div>
+        </button>
+      </div>
+
+      <div v-if="showSuggestions && searchInput.length >= 2 && suggestions.length === 0" class="suggestions-dropdown">
+        <div class="no-suggestions">No parks found</div>
+      </div>
     </div>
 
     <div class="result-count">
@@ -196,6 +331,129 @@ const resultCount = computed(() => filteredParks.value.length);
   color: #6b7280;
   cursor: pointer;
   padding: 0;
+}
+
+.search-container {
+  position: relative;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--site-header-navigation_border-color);
+  background: white;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  font-size: 16px;
+  pointer-events: none;
+  color: #6b7280;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 12px 10px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #1f2937;
+  background: white;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--brand-color);
+  box-shadow: 0 0 0 3px rgba(0, 151, 162, 0.1);
+}
+
+.clear-search-button {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.clear-search-button:hover {
+  color: #1f2937;
+}
+
+.clear-search-button:focus {
+  outline: 2px solid var(--brand-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.suggestion-item {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-item:hover,
+.suggestion-item.selected {
+  background: #f9fafb;
+}
+
+.suggestion-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.suggestion-location {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.no-suggestions {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
 }
 
 .result-count {

@@ -105,6 +105,21 @@ export function useParks() {
       // 6. Promotion filter
       if (filterState.showPromotionsOnly && !park.promotion?.active) return false;
 
+      // 7. Search filter
+      if (filterState.searchQuery) {
+        const query = filterState.searchQuery.toLowerCase();
+        const searchableText = [
+          park.name,
+          park.region,
+          park.country,
+          park.description
+        ].join(' ').toLowerCase();
+
+        if (!searchableText.includes(query)) {
+          return false; // Park doesn't match search query
+        }
+      }
+
       return true; // Park passes all filters
     });
   });

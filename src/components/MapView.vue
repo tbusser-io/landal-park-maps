@@ -34,6 +34,9 @@ const mapRef = ref<InstanceType<typeof GoogleMap> | null>(null);
 const mapReady = ref(false); // Track when map bounds are properly set
 const isMobile = useMediaQuery(MEDIA_QUERIES.MOBILE);
 
+// Maximum zoom level to prevent zooming in too close
+const MAX_ZOOM = 12;
+
 // Map options to hide controls
 const mapOptions = {
   mapTypeControl: false,
@@ -87,6 +90,17 @@ const fitMapBounds = async (parks: Park[]) => {
           };
 
       mapInstance.fitBounds(bounds, padding);
+
+      // Limit zoom level after fitBounds completes
+      // Use 'idle' event which fires once the map has finished panning/zooming
+      const idleListener = mapInstance.addListener('idle', () => {
+        const currentZoom = mapInstance.getZoom();
+        if (currentZoom && currentZoom > MAX_ZOOM) {
+          mapInstance.setZoom(MAX_ZOOM);
+        }
+        // Remove the listener after it fires once
+        google.maps.event.removeListener(idleListener);
+      });
 
       // Mark map as ready after first successful bounds fit
       if (isFirstBoundsFit.value) {
