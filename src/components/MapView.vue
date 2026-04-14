@@ -6,6 +6,8 @@ import { useAuth } from '../composables/useAuth';
 import type { Park } from '../types/Park';
 import MarkerLegend from './MarkerLegend.vue';
 
+const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
 const props = defineProps<{
   selectedPark?: Park | null;
 }>();
@@ -252,6 +254,7 @@ const clusterOptions = {
 
     <GoogleMap
       ref="mapRef"
+      :api-key="apiKey"
       :center="mapCenter"
       :zoom="5"
       :options="mapOptions"
