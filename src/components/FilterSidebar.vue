@@ -14,7 +14,17 @@ const { filterState, activeFilters, setFilter, getFilter, toggleFilter, clearAll
 const { filteredParks } = useParks();
 const { isAuthenticated } = useAuth();
 
-const countries = ['Netherlands', 'Germany', 'Belgium', 'Denmark', 'Austria', 'Switzerland', 'United Kingdom'];
+/** All countries with Landal parks (alphabetically sorted) */
+const countries = [
+  'Austria',
+  'Belgium',
+  'Czech Republic',
+  'Denmark',
+  'Germany',
+  'Netherlands',
+  'Switzerland',
+  'United Kingdom',
+];
 
 const features = [
   { key: 'indoorPool', label: 'Indoor Pool' },
